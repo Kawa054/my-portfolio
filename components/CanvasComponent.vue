@@ -50,7 +50,7 @@ onLoop(({ delta, elapsed }) => {
 <template>
   <TresCanvas clear-color="#000" shadows alpha>
     <OrbitControls />
-    <TresPerspectiveCamera :position="[4, 3, 9]" :fov="70" :aspect="1" :near="0.1" :far="1000" />
+    <TresPerspectiveCamera :position="[11, 11, 11]" :fov="70" :aspect="1" :near="0.1" :far="1000" />
     <TresMesh ref="blobRef" :position="[0, 4, 0]">
       <TresSphereGeometry :args="[2, 32, 32]" />
       <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />

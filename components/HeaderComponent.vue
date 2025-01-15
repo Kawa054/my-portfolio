@@ -27,12 +27,8 @@
 <style lang="scss" scoped>
     .header {
         .container {
-            background-color: #000;
             margin-right: 14%;
             margin-left: 14%;
-            border-color: #fff;
-            border-width : 3px;
-            border-style : solid;
             .gnav {
                 display: flex;
                 justify-content: space-between;
@@ -48,7 +44,6 @@
                         text-align: center;
                         font-weight: bold;
                         color: #fff;
-                        background-color: #000;
                         text-decoration: none;
                         padding-left: 40px;
                     };
@@ -65,10 +60,10 @@
                         -webkit-mask: url("assets/home.svg") no-repeat center center / contain;
                     }
                     .gnav-item1:hover {
-                        color: #875687;
+                        color: #00FFFF;
                     }
                     .gnav-item1:hover::before {
-                        background: #875687;
+                        background: #00FFFF;
                     }
 
                     .gnav-item2{
@@ -77,7 +72,6 @@
                         text-align: center;
                         font-weight: bold;
                         color: #fff;
-                        background-color: #000;
                         text-decoration: none;
                         padding-left: 40px;
                     };
@@ -94,10 +88,10 @@
                         -webkit-mask: url("assets/sushi.svg") no-repeat center center / contain;
                     }
                     .gnav-item2:hover {
-                        color: #875687;
+                        color: #00FFFF;
                     }
                     .gnav-item2:hover::before {
-                        background: #875687;
+                        background: #00FFFF;
                     }
 
                     .gnav-item3{
@@ -106,7 +100,6 @@
                         text-align: center;
                         font-weight: bold;
                         color: #fff;
-                        background-color: #000;
                         text-decoration: none;
                         padding-left: 40px;
                     };
@@ -123,10 +116,10 @@
                         -webkit-mask: url("assets/folder.svg") no-repeat center center / contain;
                     }
                     .gnav-item3:hover {
-                        color: #875687;
+                        color: #00FFFF;
                     }
                     .gnav-item3:hover::before {
-                        background: #875687;
+                        background: #00FFFF;
                     }
 
                     .gnav-item4{
@@ -135,7 +128,6 @@
                         text-align: center;
                         font-weight: bold;
                         color: #fff;
-                        background-color: #000;
                         text-decoration: none;
                         padding-left: 30px;
                     };
@@ -152,10 +144,10 @@
                         -webkit-mask: url("assets/reserch.svg") no-repeat center center / contain;
                     }
                     .gnav-item4:hover {
-                        color: #875687;
+                        color: #00FFFF;
                     }
                     .gnav-item4:hover::before {
-                        background: #875687;
+                        background: #00FFFF;
                     }
 
                     .gnav-item5{
@@ -164,7 +156,6 @@
                         text-align: center;
                         font-weight: bold;
                         color: #fff;
-                        background-color: #000;
                         text-decoration: none;
                         padding-left: 40px;
                     };
@@ -181,14 +172,14 @@
                         -webkit-mask: url("assets/mail.svg") no-repeat center center / contain;
                     }
                     .gnav-item5:hover {
-                        color: #875687;
+                        color: #00FFFF;
                     }
                     .gnav-item5:hover::before {
-                        background: #875687;
+                        background: #00FFFF;
                     }
                 }
                 .gnav-item:hover {
-                    border-bottom: 3px solid #875687;
+                    border-bottom: 3px solid #00FFFF;
                     padding-bottom: 13px;
                 }
                 & li {
