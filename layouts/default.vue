@@ -6,9 +6,17 @@
             </Head>
             <!– ページ上部 –>
             <div class="top_container">
+              <!- ページタイトル部分 ->
               <div class="page_title"> Ryutaro - Portfolio </div>
-              <div class="page_canvas"> test </div>
+              
+              <!- キャンバス部分 ->
+              <div class="page_canvas"> 
+                <CanvasComponent />
+              </div>
+
+              <!- ヘッダー部分 ->
               <HeaderComponent />
+
             </div>
             <!– ページ下部 –>
             <main>
@@ -19,10 +27,12 @@
 </template>
 
 <script>
+  import CanvasComponent from "~/components/CanvasComponent.vue";
   import HeaderComponent from "~/components/HeaderComponent.vue";
 
   export default {
     components: {
+      CanvasComponent,
       HeaderComponent,
     }
   };
@@ -43,12 +53,12 @@
       font-size: 20px;
       color: #FFF;
       padding: 5%;
-      height: 20%;
+      height: 1%;
     }
     .page_canvas{
       font-size: 20px;
-      color: #FFF;  
-      height: 40%;
+      color: #000;  
+      height: 50%;
     }
   }
 </style>
