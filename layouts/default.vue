@@ -17,34 +17,48 @@
                 </h2>
                   
                 <!- ヘッダー部分 ->
-                <HeaderComponent class="header"/>
+                <HeaderComponent @change-header-hover="recieve_hover_id" class="header"/>
               </div>
 
               <!- キャンバス部分 ->
               <div class="page_canvas"> 
-                <slot name="canvas"/>
+                <component :is="canvas[currentCanvas]"></component>
               </div>
 
             </div>
+
             <!– ページ下部 –>
             <div>
-                <slot />
-                <slot name="test1"></slot>
+                <slot></slot>
             </div>
         </div>
     </div>
 </template>
 
-<script>
+<script setup>
+  import { ReactiveEffect, ref } from 'vue'
   import HomeCanvasComponent from "~/components/HomeCanvasComponent.vue";
+  import AboutCanvasComponent from "~/components/AboutCanvasComponent.vue";
+  import WorksCanvasComponent from "~/components/WorksCanvasComponent.vue";
+  import ReserchCanvasComponent from "~/components/ReserchCanvasComponent.vue";
+  import ContactCanvasComponent from "~/components/ContactCanvasComponent.vue";
   import HeaderComponent from "~/components/HeaderComponent.vue";
 
-  export default {
-    components: {
-      HomeCanvasComponent,
-      HeaderComponent,
-    }
+  const currentCanvas = ref("AboutCanvasComponent");
+
+  const recieve_hover_id = (data) => {
+    const str = ["HomeCanvasComponent", "AboutCanvasComponent", "WorksCanvasComponent", "ReserchCanvasComponent", "ContactCanvasComponent"]
+    currentCanvas.value = ref(str[data]).value;
   };
+
+  const canvas = {
+    HomeCanvasComponent,
+    AboutCanvasComponent,
+    WorksCanvasComponent,
+    ReserchCanvasComponent,
+    ContactCanvasComponent
+  }
+
 </script>
 
 <style lang="scss" scoped>
@@ -96,7 +110,7 @@
         z-index: 30;
         pointer-events: auto;
         left: 24%;
-        margin-top: 270px;
+        margin-top: 360px;
       }
     }
   }

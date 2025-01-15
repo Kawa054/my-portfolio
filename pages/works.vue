@@ -1,13 +1,7 @@
 <script>
-  import WorksCanvasComponent from "~/components/WorksCanvasComponent.vue";
   definePageMeta({
     layout: false,
   });
-  export default {
-    components: {
-      WorksCanvasComponent,
-    }
-  };
 </script>
 
 <template>

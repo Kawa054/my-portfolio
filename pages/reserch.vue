@@ -1,21 +1,12 @@
 <script>
-  import ReserchCanvasComponent from "~/components/ReserchCanvasComponent.vue";
   definePageMeta({
     layout: false,
   });
-  export default {
-    components: {
-      ReserchCanvasComponent,
-    }
-  };
 </script>
 
 <template>
   <div>
     <NuxtLayout name="default">
-      <template #canvas>
-        <ReserchCanvasComponent/>
-      </template>
             
       <!- メインページ -!>
       <div class="container">
@@ -30,5 +21,6 @@
   .container{
     font-size: 20px;
     color: #c514dd;
+    height: 87vh;
   }
 </style>
