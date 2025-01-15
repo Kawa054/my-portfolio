@@ -22,25 +22,26 @@
 
               <!- キャンバス部分 ->
               <div class="page_canvas"> 
-                <CanvasComponent />
+                <slot name="canvas"/>
               </div>
 
             </div>
             <!– ページ下部 –>
-            <main>
-                <slot class="slot" />
-            </main>
+            <div>
+                <slot />
+                <slot name="test1"></slot>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-  import CanvasComponent from "~/components/CanvasComponent.vue";
+  import HomeCanvasComponent from "~/components/HomeCanvasComponent.vue";
   import HeaderComponent from "~/components/HeaderComponent.vue";
 
   export default {
     components: {
-      CanvasComponent,
+      HomeCanvasComponent,
       HeaderComponent,
     }
   };
