@@ -1,12 +1,26 @@
+<script>
+  definePageMeta({
+    layout: false,
+  });
+</script>
+
 <template>
-    <div class="container">
+  <div>
+    <NuxtLayout name="default">
+            
+      <!- メインページ -!>
+      <div class="container">
         自己紹介
-    </div>
+      </div>
+
+    </NuxtLayout>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-    .container{
-        font-size: 20px;
-        color: #c514dd;
-    }
+  .container{
+    font-size: 20px;
+    color: #c514dd;
+    height: 87vh;
+  }
 </style>

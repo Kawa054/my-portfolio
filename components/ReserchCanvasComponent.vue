@@ -58,7 +58,7 @@ onLoop(({ delta, elapsed }) => {
 
     <TresMesh :rotation="[-Math.PI / 2, 0, 0]">
       <TresPlaneGeometry :args="[10, 10, 10, 10]" />
-      <TresMeshBasicMaterial color="#444" />
+      <TresMeshBasicMaterial color="#FFFF00" />
     </TresMesh>
   </TresCanvas>
 </template>
