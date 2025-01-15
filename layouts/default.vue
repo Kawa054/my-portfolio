@@ -2,13 +2,18 @@
     <div>
         <div class="container">
             <Head>
-                <Title>portfolio-test</Title>
+              <Title>portfolio-test</Title>
             </Head>
             <!– ページ上部 –>
             <div class="top_container">
-              <!- ページタイトル部分 ->
-              <div class="page_title"> Ryutaro - Portfolio </div>
               
+              <!- ページタイトル部分 ->
+              <div class="title"> 
+                <h2 class="text-3xl font-italic">
+                  Ryutaro - Portfolio 
+                </h2>
+              </div>
+
               <!- キャンバス部分 ->
               <div class="page_canvas"> 
                 <CanvasComponent />
@@ -48,17 +53,21 @@
       left: 0;
       width: 100%;
       height: 100vh;
-    }
-    .page_title{
-      font-size: 20px;
-      color: #FFF;
-      padding: 5%;
-      height: 1%;
-    }
-    .page_canvas{
-      font-size: 20px;
-      color: #000;  
-      height: 50%;
+      .page_canvas{
+        width: 100%;
+        height: 70%;
+      }
+      .title {
+        color: #fff; 
+        font-size: 30px;
+        font-family: 'Amiri', serif;
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        text-decoration-color: #fff;
+        pointer-events: none;
+      }
     }
   }
 </style>

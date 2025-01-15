@@ -10,13 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@tresjs/cientos": "^4.0.3",
     "@tresjs/nuxt": "^3.0.7",
+    "gsap": "^3.12.5",
     "nuxt": "^3.15.1",
     "three": "^0.172.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.1",
     "sass-embedded": "^1.83.4"
   }
 }
