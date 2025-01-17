@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-  import { ReactiveEffect, ref } from 'vue'
+  import { ref } from 'vue'
   import HomeCanvasComponent from "~/components/HomeCanvasComponent.vue";
   import AboutCanvasComponent from "~/components/AboutCanvasComponent.vue";
   import WorksCanvasComponent from "~/components/WorksCanvasComponent.vue";

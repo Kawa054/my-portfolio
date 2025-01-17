@@ -3,19 +3,19 @@
         <div class="container">
             <nav>
                 <ul class="gnav">
-                    <li v-on:mouseover="changeHoverHeaderId(0)" class="gnav-item">
+                    <li v-on:mouseover="changeHoverHeaderId(0)" v-on:click="scroll()" class="gnav-item">
                         <NuxtLink class="gnav-item1" to="/"> Home </NuxtLink>
                     </li>
-                    <li v-on:mouseover="changeHoverHeaderId(1)" class="gnav-item">
+                    <li v-on:mouseover="changeHoverHeaderId(1)" v-on:click="scroll()" class="gnav-item">
                         <NuxtLink class="gnav-item2" to="/about"> About </NuxtLink>
                     </li>
-                    <li v-on:mouseover="changeHoverHeaderId(2)" class="gnav-item">
+                    <li v-on:mouseover="changeHoverHeaderId(2)" v-on:click="scroll()" class="gnav-item">
                         <NuxtLink class="gnav-item3" to="/works"> Works </NuxtLink>
                     </li>
-                    <li v-on:mouseover="changeHoverHeaderId(3)" class="gnav-item">
+                    <li v-on:mouseover="changeHoverHeaderId(3)" v-on:click="scroll()" class="gnav-item">
                         <NuxtLink class="gnav-item4" to="/reserch"> Reserch </NuxtLink>
                     </li>
-                    <li v-on:mouseover="changeHoverHeaderId(4)" class="gnav-item">
+                    <li v-on:mouseover="changeHoverHeaderId(4)" v-on:click="scroll()" class="gnav-item">
                         <NuxtLink class="gnav-item5" to="/contact"> Contact </NuxtLink>
                     </li>
                 </ul>
@@ -29,6 +29,9 @@
         methods:{
             changeHoverHeaderId(hover_id){
                 this.$emit('change-header-hover', hover_id)
+            },
+            scroll(){
+                window.scrollTo({top: 900, left: 0, behavior: "smooth"}); 
             }
         }
     }

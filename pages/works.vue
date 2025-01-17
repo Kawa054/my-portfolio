@@ -1,6 +1,7 @@
-<script>
+<script setup>
   definePageMeta({
     layout: false,
+    scrollToTop: false,
   });
 </script>
 
@@ -24,5 +25,6 @@
   .container{
     font-size: 20px;
     color: #c514dd;
+    height: 87vh;
   }
 </style>

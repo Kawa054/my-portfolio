@@ -1,6 +1,7 @@
 <script>
   definePageMeta({
     layout: false,
+    scrollToTop: false,
   });
 </script>
 

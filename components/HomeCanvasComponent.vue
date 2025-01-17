@@ -1,50 +1,50 @@
 <script setup lang="ts">
-import { shallowRef } from 'vue';
-import { TresCanvas, useRenderLoop } from '@tresjs/core';
-import { OrbitControls } from '@tresjs/cientos';
-import { Vector2 } from 'three'
+  import { shallowRef } from 'vue';
+  import { TresCanvas, useRenderLoop } from '@tresjs/core';
+  import { OrbitControls } from '@tresjs/cientos';
+  import { Vector2 } from 'three'
 
-const blobRef = shallowRef(null);
+  const blobRef = shallowRef(null);
 
-const uniforms = {
-  uTime: { value: 0 },
-  uAmplitude: { value: new Vector2(0.1, 0.1) },
-  uFrequency: { value: new Vector2(20, 5) },
-}
-
-const vertexShader = `
-uniform vec2 uAmplitude;
-uniform vec2 uFrequency;
-uniform float uTime;
-
-varying vec2 vUv;
-
-void main() {
-    vec4 modelPosition = modelMatrix * vec4(position, 1.0);
-    modelPosition.y += sin(modelPosition.x * uFrequency.x - uTime) * uAmplitude.x;
-    modelPosition.x += cos(modelPosition.y * uFrequency.y - uTime) * uAmplitude.y;
-
-    vec4 viewPosition = viewMatrix * modelPosition;
-    gl_Position = projectionMatrix * viewPosition;
-    vUv = uv;
-}
-`
-
-const fragmentShader = `
-precision mediump float;
-varying vec2 vUv;
-
-void main() {
-    gl_FragColor = vec4(1.0, vUv.y, 0.5, 1.0);
-}
-`
-const { onLoop } = useRenderLoop();
-
-onLoop(({ delta, elapsed }) => {
-   if (blobRef.value) {
-    blobRef.value.material.uniforms.uTime.value = elapsed
+  const uniforms = {
+    uTime: { value: 0 },
+    uAmplitude: { value: new Vector2(0.1, 0.1) },
+    uFrequency: { value: new Vector2(20, 5) },
   }
-});
+
+  const vertexShader = `
+  uniform vec2 uAmplitude;
+  uniform vec2 uFrequency;
+  uniform float uTime;
+
+  varying vec2 vUv;
+
+  void main() {
+      vec4 modelPosition = modelMatrix * vec4(position, 1.0);
+      modelPosition.y += sin(modelPosition.x * uFrequency.x - uTime) * uAmplitude.x;
+      modelPosition.x += cos(modelPosition.y * uFrequency.y - uTime) * uAmplitude.y;
+
+      vec4 viewPosition = viewMatrix * modelPosition;
+      gl_Position = projectionMatrix * viewPosition;
+      vUv = uv;
+  }
+  `
+
+  const fragmentShader = `
+  precision mediump float;
+  varying vec2 vUv;
+
+  void main() {
+      gl_FragColor = vec4(1.0, vUv.y, 0.5, 1.0);
+  }
+  `
+  const { onLoop } = useRenderLoop();
+
+  onLoop(({ delta, elapsed }) => {
+    if (blobRef.value) {
+      blobRef.value.material.uniforms.uTime.value = elapsed
+    }
+  });
 </script>
 
 <template>
