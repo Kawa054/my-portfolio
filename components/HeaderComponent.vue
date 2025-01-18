@@ -2,6 +2,7 @@
     <header class="header" ref="header">
         <div class="container">
             <nav>
+                <!-- ヘッダー: アイコン ＋ ページ名 -->
                 <ul class="gnav">
                     <li v-on:mouseover="changeHoverHeaderId(0)" v-on:click="scroll()" class="gnav-item">
                         <HomeIcon class="gnav-icon1" width="30" height="30" fill="#fff"></HomeIcon>
@@ -44,7 +45,7 @@
             ReserchIcon,
             ContactIcon,
         },
-        methods:{
+        methods: {
             changeHoverHeaderId(hover_id){
                 this.$emit('change-header-hover', hover_id)
             },
@@ -65,11 +66,11 @@
                 justify-content: space-between;
                 font-size: 20px;
                 padding: 10px;
-                .gnav-item{
+                .gnav-item {
                     display: flex;
                     justify-content: space-between;
                     padding-bottom: 16px;
-                    .gnav-item-str{
+                    .gnav-item-str {
                         display: block;
                         position: relative;
                         text-align: center;
@@ -77,31 +78,31 @@
                         color: #fff;
                         text-decoration: none;
                         padding-left: 5px;
-                    };
-                    .gnav-icon1{
+                    }
+                    .gnav-icon1 {
                         margin-top: -5px;
-                    };
-                    .gnav-icon2{
+                    }
+                    .gnav-icon2 {
                         margin-top: -2px;
                         margin-right: 2px;
-                    };
-                    .gnav-icon3{
+                    }
+                    .gnav-icon3 {
                         margin-top: -3px;
                         margin-right: 1px;
-                    };
-                    .gnav-icon4{
+                    }
+                    .gnav-icon4 {
                         margin-top: -8px;
                         margin-right: -2px;
-                    };
-                    .gnav-icon5{
+                    }
+                    .gnav-icon5 {
                         margin-right: 4px;
-                    };
+                    }
                 }
                 .gnav-item:hover {
                     border-bottom: 3px solid #00FFFF;
                     padding-bottom: 13px;
                 }
-                .gnav-item:hover > *{
+                .gnav-item:hover > * {
                     color: #00FFFF;
                     fill: #00FFFF;
                 }
