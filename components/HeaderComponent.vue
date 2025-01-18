@@ -70,6 +70,7 @@
                     display: flex;
                     justify-content: space-between;
                     padding-bottom: 16px;
+                    transition: all 0.1s ease 0.14s;
                     .gnav-item-str {
                         display: block;
                         position: relative;
@@ -78,24 +79,30 @@
                         color: #fff;
                         text-decoration: none;
                         padding-left: 5px;
+                        transition: all 0.3s ease 0s;
                     }
                     .gnav-icon1 {
                         margin-top: -5px;
+                        transition: all 0.3s ease 0s;
                     }
                     .gnav-icon2 {
                         margin-top: -2px;
                         margin-right: 2px;
+                        transition: all 0.3s ease 0s;
                     }
                     .gnav-icon3 {
                         margin-top: -3px;
                         margin-right: 1px;
+                        transition: all 0.3s ease 0s;
                     }
                     .gnav-icon4 {
                         margin-top: -8px;
                         margin-right: -2px;
+                        transition: all 0.3s ease 0s;
                     }
                     .gnav-icon5 {
                         margin-right: 4px;
+                        transition: all 0.3s ease 0s;
                     }
                 }
                 .gnav-item:hover {
