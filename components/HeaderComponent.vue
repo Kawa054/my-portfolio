@@ -4,19 +4,24 @@
             <nav>
                 <ul class="gnav">
                     <li v-on:mouseover="changeHoverHeaderId(0)" v-on:click="scroll()" class="gnav-item">
-                        <NuxtLink class="gnav-item1" to="/"> Home </NuxtLink>
+                        <HomeIcon class="gnav-icon1" width="30" height="30" fill="#fff"></HomeIcon>
+                        <NuxtLink class="gnav-item-str" to="/"> Home </NuxtLink>
                     </li>
                     <li v-on:mouseover="changeHoverHeaderId(1)" v-on:click="scroll()" class="gnav-item">
-                        <NuxtLink class="gnav-item2" to="/about"> About </NuxtLink>
+                        <AboutIcon class="gnav-icon2" width="30" height="30" fill="#fff"></AboutIcon>
+                        <NuxtLink class="gnav-item-str" to="/about"> About </NuxtLink>
                     </li>
                     <li v-on:mouseover="changeHoverHeaderId(2)" v-on:click="scroll()" class="gnav-item">
-                        <NuxtLink class="gnav-item3" to="/works"> Works </NuxtLink>
+                        <WorksIcon class="gnav-icon3" width="30" height="30" fill="#fff"></WorksIcon>
+                        <NuxtLink class="gnav-item-str" to="/works"> Works </NuxtLink>
                     </li>
                     <li v-on:mouseover="changeHoverHeaderId(3)" v-on:click="scroll()" class="gnav-item">
-                        <NuxtLink class="gnav-item4" to="/reserch"> Reserch </NuxtLink>
+                        <ReserchIcon class="gnav-icon4" width="30" height="30" fill="#fff"></ReserchIcon>
+                        <NuxtLink class="gnav-item-str" to="/reserch"> Reserch </NuxtLink>
                     </li>
                     <li v-on:mouseover="changeHoverHeaderId(4)" v-on:click="scroll()" class="gnav-item">
-                        <NuxtLink class="gnav-item5" to="/contact"> Contact </NuxtLink>
+                        <ContactIcon class="gnav-icon5" width="30" height="30" fill="#fff"></ContactIcon>
+                        <NuxtLink class="gnav-item-str" to="/contact"> Contact </NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -25,7 +30,20 @@
 </template>
 
 <script>
+    import HomeIcon from '~/assets/HomeIcon.vue';
+    import AboutIcon from '~/assets/AboutIcon.vue';
+    import WorksIcon from '~/assets/WorksIcon.vue';
+    import ReserchIcon from '~/assets/ReserchIcon.vue';
+    import ContactIcon from '~/assets/ContactIcon.vue';
+
     export default {
+        components: {
+            HomeIcon,
+            AboutIcon,
+            WorksIcon,
+            ReserchIcon,
+            ContactIcon,
+        },
         methods:{
             changeHoverHeaderId(hover_id){
                 this.$emit('change-header-hover', hover_id)
@@ -51,149 +69,41 @@
                     display: flex;
                     justify-content: space-between;
                     padding-bottom: 16px;
-                    .gnav-item1{
+                    .gnav-item-str{
                         display: block;
                         position: relative;
                         text-align: center;
                         font-weight: bold;
                         color: #fff;
                         text-decoration: none;
-                        padding-left: 40px;
+                        padding-left: 5px;
                     };
-                    .gnav-item1::before{
-                        content: "";
-                        position: absolute;
-                        width: 30px;
-                        height: 30px;
-                        top: 30%;
-                        right: 70px;
-                        transform: translateY(-50%);
-                        background: #fff;
-                        mask: url("assets/home.svg") no-repeat center center / contain;
-                        -webkit-mask: url("assets/home.svg") no-repeat center center / contain;
-                    }
-                    .gnav-item1:hover {
-                        color: #00FFFF;
-                    }
-                    .gnav-item1:hover::before {
-                        background: #00FFFF;
-                    }
-
-                    .gnav-item2{
-                        display: block;
-                        position: relative;
-                        text-align: center;
-                        font-weight: bold;
-                        color: #fff;
-                        text-decoration: none;
-                        padding-left: 40px;
+                    .gnav-icon1{
+                        margin-top: -5px;
                     };
-                    .gnav-item2::before{
-                        content: "";
-                        position: absolute;
-                        width: 30px;
-                        height: 30px;
-                        top: 50%;
-                        right: 70px;
-                        transform: translateY(-50%);
-                        background: #fff;
-                        mask: url("assets/sushi.svg") no-repeat center center / contain;
-                        -webkit-mask: url("assets/sushi.svg") no-repeat center center / contain;
-                    }
-                    .gnav-item2:hover {
-                        color: #00FFFF;
-                    }
-                    .gnav-item2:hover::before {
-                        background: #00FFFF;
-                    }
-
-                    .gnav-item3{
-                        display: block;
-                        position: relative;
-                        text-align: center;
-                        font-weight: bold;
-                        color: #fff;
-                        text-decoration: none;
-                        padding-left: 40px;
+                    .gnav-icon2{
+                        margin-top: -2px;
+                        margin-right: 2px;
                     };
-                    .gnav-item3::before{
-                        content: "";
-                        position: absolute;
-                        width: 30px;
-                        height: 30px;
-                        top: 50%;
-                        right: 70px;
-                        transform: translateY(-50%);
-                        background: #fff;
-                        mask: url("assets/folder.svg") no-repeat center center / contain;
-                        -webkit-mask: url("assets/folder.svg") no-repeat center center / contain;
-                    }
-                    .gnav-item3:hover {
-                        color: #00FFFF;
-                    }
-                    .gnav-item3:hover::before {
-                        background: #00FFFF;
-                    }
-
-                    .gnav-item4{
-                        display: block;
-                        position: relative;
-                        text-align: center;
-                        font-weight: bold;
-                        color: #fff;
-                        text-decoration: none;
-                        padding-left: 30px;
+                    .gnav-icon3{
+                        margin-top: -3px;
+                        margin-right: 1px;
                     };
-                    .gnav-item4::before{
-                        content: "";
-                        position: absolute;
-                        width: 30px;
-                        height: 30px;
-                        top: 50%;
-                        right: 90px;
-                        transform: translateY(-50%);
-                        background: #fff;
-                        mask: url("assets/reserch.svg") no-repeat center center / contain;
-                        -webkit-mask: url("assets/reserch.svg") no-repeat center center / contain;
-                    }
-                    .gnav-item4:hover {
-                        color: #00FFFF;
-                    }
-                    .gnav-item4:hover::before {
-                        background: #00FFFF;
-                    }
-
-                    .gnav-item5{
-                        display: block;
-                        position: relative;
-                        text-align: center;
-                        font-weight: bold;
-                        color: #fff;
-                        text-decoration: none;
-                        padding-left: 40px;
+                    .gnav-icon4{
+                        margin-top: -8px;
+                        margin-right: -2px;
                     };
-                    .gnav-item5::before{
-                        content: "";
-                        position: absolute;
-                        width: 30px;
-                        height: 30px;
-                        top: 50%;
-                        right: 90px;
-                        transform: translateY(-50%);
-                        background: #fff;
-                        mask: url("assets/mail.svg") no-repeat center center / contain;
-                        -webkit-mask: url("assets/mail.svg") no-repeat center center / contain;
-                    }
-                    .gnav-item5:hover {
-                        color: #00FFFF;
-                    }
-                    .gnav-item5:hover::before {
-                        background: #00FFFF;
-                    }
+                    .gnav-icon5{
+                        margin-right: 4px;
+                    };
                 }
                 .gnav-item:hover {
                     border-bottom: 3px solid #00FFFF;
                     padding-bottom: 13px;
+                }
+                .gnav-item:hover > *{
+                    color: #00FFFF;
+                    fill: #00FFFF;
                 }
                 & li {
                     list-style:none;
