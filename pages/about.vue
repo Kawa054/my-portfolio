@@ -111,8 +111,8 @@
 			width:70%;
 			font-size: 24px;
 			background-color: rgba(255,255,255,0.2);
-			box-shadow: 3px 3px 0 rgba(255, 4, 0, 1);
-			color: rgba(255, 4, 0, 1);
+			box-shadow: 3px 3px 0 #1d004c;
+			color: #1d004c;
 			span.item {
 				margin:10%;
 			}
