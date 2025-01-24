@@ -118,7 +118,9 @@
 			}
 		}
 		.nav-item:hover{
-			background-color: rgba(176, 252, 248, 0.8);
+			background-color: rgba(255,255,255,0.4);
+			box-shadow: 3px 3px 0 #ee7800;
+			color: #ee7800;
 		}
 		& li {
 			list-style:none;

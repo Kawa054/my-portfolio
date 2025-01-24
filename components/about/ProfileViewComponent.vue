@@ -14,7 +14,7 @@
 <template>
     <div class="view-container">
         <div class="title">
-            <span class="main-title"> 市川 龍太郎 / Ryutaro Ichikawa </span>
+            <span class="main-title">  市川 龍太郎 / Ryutaro Ichikawa </span>
             <span class="sub-title"> 　　京都大学大学院 情報学研究科 M1</span>
         </div>
         <!-- 経歴部分 -->
@@ -82,13 +82,13 @@
         width: 90%;
         height: 90%;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
+        padding-top: 22px;
+        padding-left: 30px;
         justify-content:space-between;
         .title{
             width: 70%;
             padding-bottom: 5px;
+            padding-left: 10px;
             border-bottom:3px solid #00FFFF;
             border-color:#000;
             border-width:2px;
@@ -103,9 +103,9 @@
         }
         .history{
             margin-left: -2%;
-            margin-top: 2%;
             .timeline {
                 display: flex;
+                height:90%;
                 .timeline-separator {
                     top: 2px;
                     display: block;
