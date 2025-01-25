@@ -53,8 +53,8 @@
 </script>
 
 <template>
-	<div>
-		<NuxtLayout name="default">
+	<NuxtLayout name="default">
+		<div class="background">
 			<!-- メインページ -->
 			<div class="container">
 				<ul class="nav-container">
@@ -74,40 +74,34 @@
 					<HobbyViewComponent v-else/>
 				</div>	
 			</div>
-		</NuxtLayout>
-	</div>
+		</div>
+	</NuxtLayout>
 </template>
 
 <style lang="scss" scoped>
 	.container {
 		font-size: 20px;
-		color: #c514dd;
-		height: 87vh;
+		height: 100%;
+		padding-top: 3%;
+		padding-bottom: 3%;
 		display: flex;
 		justify-content: center;
-		align-items:center;
-		
+		background-color: rgba(255,255,255,0.85);
 	}
 	//背景透過用
-	.container::after {
-		content: "";
-		position: absolute;
-		opacity: 0.14;
-		left: 0;
+	.background {
+		position: relative;
 		width: 100%;
-		height: 87vh;
+		height: 100%;
 		background-image: url(assets/background4.jpg);
 		background-size: auto;
-		background-position: left;
-		z-index: -1;
 	}
-	.nav-container{
-		width:12%;
-		height:88%;
+	.nav-container {
+		width: 200px;
+		right: 1%;
 		display:flex;
 		flex-flow: column;
-		.nav-item{
-			height:6%;
+		.nav-item {
 			width:70%;
 			font-size: 24px;
 			background-color: rgba(255,255,255,0.2);
@@ -117,7 +111,7 @@
 				margin:10%;
 			}
 		}
-		.nav-item:hover{
+		.nav-item:hover {
 			background-color: rgba(255,255,255,0.4);
 			box-shadow: 3px 3px 0 #ee7800;
 			color: #ee7800;
@@ -128,9 +122,10 @@
 			margin: 10%;
 		}
 	}
-	.content{
-		width:70%;
-		height:88%;
+	.content {
+		position: relative;
+		width: 70%;
+		height: auto;
 		background-color: #f1f1f1;
 		outline: 2px solid #1d004c;
 		outline-offset: -0.5rem;

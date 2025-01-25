@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<NuxtLayout name="default">
+	<NuxtLayout name="default">
+		<div class="background">
 			<!-- メインページ -->
 			<div class="container">
 				<div class="text-container" data-title="WELCOME TO MY PORTFOLIO SITE!">
@@ -21,8 +21,8 @@
 					</div>
 				</div>
 			</div>
-		</NuxtLayout>
-	</div>
+		</div>
+	</NuxtLayout>
 </template>
 
 <script setup>
@@ -72,33 +72,29 @@
 	});
 </script>
 
-<style lang="scss" scoped>.layout-enter-active,
+<style lang="scss" scoped>
 	.container {
 		font-size: 20px;
-		color: #c514dd;
-		height: 87vh;
+		height: 100%;
+		padding-top: 6%;
+		padding-bottom: 6%;
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		
+		background-color: rgba(255,255,255,0.85);
 	}
 	//背景透過用
-	.container::after {
-		content: "";
-		position: absolute;
-		opacity: 0.15;
-		left: 0;
+	.background {
+		position: relative;
 		width: 100%;
-		height: 87vh;
+		height: 100%;
 		background-image: url(assets/background0.jpg);
 		background-size: auto;
-		background-position: left;
-		z-index: -1;
 	}
 	.text-container {
 		position: relative;
 		width: 60%;
-		height: 80%;
+		height: auto;
 		padding: 2.5rem 2rem 1rem;
 		background-color: #f1f1f1;
 		outline: 2px solid #333;
@@ -106,6 +102,7 @@
 		box-shadow: 5px 5px 0 #333;
 		border-radius: 10px;
 		border: 3px solid #333;
+		margin-bottom: auto;
 	}
 	.text-container::before {
 		position: absolute;

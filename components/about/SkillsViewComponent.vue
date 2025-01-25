@@ -67,20 +67,21 @@
     .view-container {
         width: 90%;
         height: 90%;
-        position: absolute;
+        position: relative;
         padding-top: 42px;
         padding-left: 60px;
-        .skill-row{
+        .skill-row {
             display: flex;
             margin-bottom: 10px;
-            .star{
+            .star {
+                position: relative;
                 margin-right: 30px;
             }
-            .split-line{
-                margin-top: -20px;
-                border-left:1px solid rgba(24, 0, 79, 0.5); /*線の設定*/
+            .split-line {
+                margin-top: -10px;
+                border-left: 3px #1e4f012f solid;
             }
-            .skill{
+            .skill {
                 display: flex;
                 list-style: none;        
                 position: relative;
@@ -88,15 +89,22 @@
                 height: 110px;
             }
         }
-        .text{
+        .text {
+            width: 100%;
+            max-width: 1000px;
+            height: 100%;
+            max-height: 100px;
             margin-top: 18px;
             color: black;
         }
     }
     img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        max-width: 100px;
+        height: 100%;
+        max-height: 100px;
         padding-right: 10px;
+        aspect-ratio: 1 / 1;
     }
     img:hover{
         transform: scale(1.17, 1.17);

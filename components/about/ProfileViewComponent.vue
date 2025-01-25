@@ -67,9 +67,7 @@
                     <!-- 右テキスト部分 -->
                     <p class="timeline-text">
                         大学編入学(2年次)<br>
-                        大学では高度な数学や物理、情報科学などを学びました。その過程で様々な価値観に触れ、色々なことに悩み、自分を見つめなおすことで人として成長することができました。大学で学んだ多くの理論は、必要な時に新しい技術を習得する下地になっており、これからの挑戦の支えになっています。また、研究では複雑すぎるような問題でも特定の具体的な状況に分けて考えることで、全体を解明していくプロセスを学び、答えのない未知の問題に対応する力を付けることが出来ました。大学での経験を糧に、活躍できる技術者に成れるよう努力を続けています。 <br>
-                        <br>
-                        <br>
+                        大学では高度な数学や物理、情報科学などを学びました。その過程で様々な価値観に触れ、色々なことに悩み、自分を見つめなおすことで人として成長することができました。大学で学んだ多くの理論は、必要な時に新しい技術を習得する下地になっており、これからの挑戦の支えになっています。また、研究では複雑すぎるような問題でも特定の具体的な状況に分けて考えることで、全体を解明していくプロセスを学び、答えのない未知の問題に対応する力を付けることが出来ました。大学での経験を糧に、活躍できる技術者に成れるよう努力を続けています。
                     </p>
                 </div>
             </li>
@@ -80,8 +78,7 @@
 <style lang="scss" scoped>
 	.view-container {
         width: 90%;
-        height: 90%;
-        position: absolute;
+        position: relative;
         padding-top: 22px;
         padding-left: 30px;
         justify-content:space-between;
@@ -105,48 +102,32 @@
             margin-left: -2%;
             .timeline {
                 display: flex;
-                height:90%;
                 .timeline-separator {
-                    top: 2px;
-                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    float: left;
+                    border-left: 3px #1e4f0114 solid;
+                }
+                .timeline-text:before {
+                    content: '';
                     width: 13px;
                     height: 13px;
-                    border-radius: 50%;
-                    background-color: #000;
-                    position: relative;
-                }
-                .timeline-separator::after {
-                    content: "";
+                    background: #3ec679;
                     position: absolute;
-                    top: 0;
-                    left: 6px;
-                    z-index: 2;
-                    width: 1px;
-                    height: 200px;
-                    background-color: #000;
+                    top: 3px;
+                    left: -5px;
+                    border-radius: 100%;
                 }
-                .timeline-separator-last::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 6px;
-                    z-index: 2;
-                    width: 1px;
-                    height: 115px;
-                    background-color: #000;
+                .timeline-separator-last {
+                    height: 95%;
                 }
                 .timeline-date {
                     position: relative;
                     padding-right: 20px;
                 }
-                .timeline-date:first-child {
-                    top: -18px;
-                }
                 .timeline-text {
-                    top: -30px;
                     position: relative;
-                    padding-left: 40px;
-                    padding-bottom: -40px;
+                    padding-left: 30px;
                     color: #000;
                 }
                 & p{
@@ -154,6 +135,11 @@
                     color: #000;
                 }
             }
+        }
+        .history > li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
         }
     }
 </style>

@@ -50,7 +50,7 @@
                 this.$emit('change-header-hover', hover_id)
             },
             scroll(){
-                window.scrollTo({top: 900, left: 0, behavior: "smooth"}); 
+                window.scrollTo({top: 3900, left: 0, behavior: "smooth"}); 
             }
         }
     }
