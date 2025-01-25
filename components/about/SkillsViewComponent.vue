@@ -1,8 +1,12 @@
 <script setup>
 	import { gsap } from 'gsap'
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
-	
-	gsap.registerPlugin(ScrollTrigger); //Nuxt3でのgsapでscrollTrigger使うには必要らしい
+    
+    import ModalComponent from "~/components/ModalComponent.vue";
+
+    const is_modal_opened = ref(true);
+
+	gsap.registerPlugin(ScrollTrigger);
 
 	definePageMeta({
 		layout: false,
@@ -13,7 +17,7 @@
 <template>
     <div class="view-container">
         <div class="skill-row">
-            <img class="star" src="/assets/logo/star4.png">
+            <img class="star" src="/assets/logo/star4.png" @click="is_modal_opened = true">
             <div class="split-line"></div>
             <ul class="skill">
                 <li><img src="/assets/logo/c.png"></li>

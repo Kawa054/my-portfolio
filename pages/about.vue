@@ -8,7 +8,7 @@
 
 	gsap.registerPlugin(ScrollTrigger); //Nuxt3でのgsapでscrollTrigger使うには必要らしい
 
-	const type = ref(0);
+	const type = ref(0); //Profile(0)かskills(1)かhobbies(2)か
 
 	definePageMeta({
 		layout: false,
