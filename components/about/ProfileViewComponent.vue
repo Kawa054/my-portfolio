@@ -1,13 +1,24 @@
 
 <script setup>
 	import { gsap } from 'gsap'
-	import { ScrollTrigger } from "gsap/ScrollTrigger";
-	
-	gsap.registerPlugin(ScrollTrigger); //Nuxt3でのgsapでscrollTrigger使うには必要らしい
 
 	definePageMeta({
 		layout: false,
 		scrollToTop: false,
+	});
+
+    onMounted(() => {
+		gsap.set('.view-container', {
+			opacity: 0,
+			y: 15,
+		});
+		gsap.to(".view-container", {
+			opacity: 1, 
+			y: 0,
+		})
+
+        gsap.set('.timeline', { opacity: 0, y: 10, });
+		gsap.to(".timeline", { opacity: 1, y: 0, stagger: 0.2,})
 	});
 </script>
 

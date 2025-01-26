@@ -1,7 +1,6 @@
 <script setup>
 	import { gsap } from 'gsap'
-	import { ScrollTrigger } from "gsap/ScrollTrigger";
-    
+
     import ModalComponent from "~/components/ModalComponent.vue";
 
     //モーダル用データ
@@ -10,11 +9,23 @@
     const title = ref("undefined title");
     const description = ref("undefined description");
 
-	gsap.registerPlugin(ScrollTrigger);
-
 	definePageMeta({
 		layout: false,
 		scrollToTop: false,
+	});
+
+    onMounted(() => {
+		gsap.set('.view-container', {
+			opacity: 0,
+			y: 15,
+		});
+		gsap.to(".view-container", {
+			opacity: 1, 
+			y: 0,
+		})
+
+        gsap.set('.skill-row', { opacity: 0, y: 10, });
+		gsap.to(".skill-row", { opacity: 1, y: 0, stagger: 0.2,})
 	});
 </script>
 
@@ -170,7 +181,7 @@
                 title = '技術レベル1';
                 description = '授業などで触れたことがある程度。実用的なプログラムの開発経験はない';
             ">
-            <div class="split-line"></div>
+            <div class="split-line split-line-last"></div>
             <ul class="skill">
                 <li><img src="/assets/logo/docker.png" @click="
                     is_modal_opened = true;
@@ -211,6 +222,10 @@
                 margin-top: -10px;
                 border-left: 3px #1e4f012f solid;
             }
+            .split-line-last{
+                margin-top: -10px;
+                margin-bottom: 30px;
+            }
             .skill {
                 display: flex;
                 list-style: none;        
@@ -223,22 +238,22 @@
             width: 100%;
             max-width: 1000px;
             height: 100%;
-            max-height: 100px;
-            margin-top: 18px;
+            max-height: 60px;
+            padding-bottom: 32px;
             color: black;
         }
     }
     img {
         width: 100%;
-        max-width: 100px;
+        max-width: 95px;
         height: 100%;
-        max-height: 100px;
+        max-height: 95px;
         padding-right: 10px;
         aspect-ratio: 1 / 1;
     }
     img:hover{
         transform: scale(1.17, 1.17);
-        transition: 0.2s;
+        transition: 0.15s;
         //border-bottom: 5px solid rgba(255, 0, 0, 0.7);
     }
 </style>

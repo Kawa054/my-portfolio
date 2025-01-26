@@ -1,9 +1,12 @@
 <script setup lang="ts">
+	import { gsap } from 'gsap'
+
     interface Props {
         imageName?: string|null;
         description?: string|null;
         modalTitle?: string|null;
     }
+
     const props = withDefaults(defineProps<Props>(), {
         imageName: null,
         description: null,
@@ -15,6 +18,25 @@
         return new URL(`../assets/logo/${fileName}.png`, import.meta.url).href
     }
 
+	onMounted(() => {
+		gsap.set('.modal', {
+			opacity: 0,
+			y: 20,
+		});
+		gsap.to(".modal", {
+			opacity: 1, 
+			y: 0,
+		})
+
+		gsap.set('.modal-description', {
+			opacity: 0,
+		});
+		gsap.to(".modal-description", {
+			opacity: 1, 
+			y: 0, 
+			delay: 0.4,
+		})
+	});
 </script>
 
 <template>
