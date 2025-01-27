@@ -148,9 +148,9 @@
             }
         }
         .history > li {
-        overflow: hidden;
-        margin: 0;
-        position: relative;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
         }
     }
 </style>

@@ -209,7 +209,7 @@
         width: 90%;
         height: 90%;
         position: relative;
-        padding-top: 42px;
+        padding-top: 32px;
         padding-left: 60px;
         .skill-row {
             display: flex;
@@ -224,7 +224,7 @@
             }
             .split-line-last{
                 margin-top: -10px;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
             .skill {
                 display: flex;
@@ -235,6 +235,7 @@
             }
         }
         .text {
+            margin-top: -30px;
             width: 100%;
             max-width: 1000px;
             height: 100%;
@@ -245,14 +246,14 @@
     }
     img {
         width: 100%;
-        max-width: 95px;
+        max-width: 85px;
         height: 100%;
-        max-height: 95px;
+        max-height: 85px;
         padding-right: 10px;
         aspect-ratio: 1 / 1;
     }
     img:hover{
-        transform: scale(1.17, 1.17);
+        transform: scale(1.2, 1.2);
         transition: 0.15s;
         //border-bottom: 5px solid rgba(255, 0, 0, 0.7);
     }

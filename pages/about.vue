@@ -4,7 +4,7 @@
 
 	import ProfileViewComponent from "~/components/about/ProfileViewComponent.vue";
 	import SkillsViewComponent from "~/components/about/SkillsViewComponent.vue";
-	import HobbyViewComponent from "~/components/about/HobbyViewComponent.vue";
+	import HobbiesViewComponent from "~/components/about/HobbiesViewComponent.vue";
 
 	gsap.registerPlugin(ScrollTrigger); //Nuxt3でのgsapでscrollTrigger使うには必要らしい
 
@@ -26,7 +26,7 @@
 			y: 0, 
 			scrollTrigger: {
 				trigger: '.nav-container',
-				start: 'top center+=10%',
+				start: 'top center+=30%',
 				end: 'bottom center-=100px',
 				toggleActions: 'play none none reverse', //上に戻った時再度アニメーションするか
 				markers: false, //マーカー(デバッグ用)
@@ -43,7 +43,7 @@
 			delay: 0.3, //遅延
 			scrollTrigger: {
 				trigger: '.content',
-				start: 'top center+=10%',
+				start: 'top center+=30%',
 				end: 'bottom center-=100px',
 				toggleActions: 'play none none reverse', //上に戻った時再度アニメーションするか
 				markers: false, //マーカー(デバッグ用)
@@ -59,19 +59,34 @@
 			<div class="container">
 				<ul class="nav-container">
 					<li class="nav-item" @click="type = 0">
-						<span class="item">PROFILE</span>
+						<div class="item">
+							<div v-if="type === 0">・</div>
+							<div v-else>　</div>
+							<span> PROFILE </span>
+						</div>
+						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 1">
-						<span class="item">SKILLS</span>
+						<div class="item">
+							<div v-if="type === 1">・</div>
+							<div v-else>　</div>
+							<span> SKILLS </span>
+						</div>
+						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 2">
-						<span class="item">HOBBY</span>
+						<div class="item">
+							<div v-if="type === 2">・</div>
+							<div v-else>　</div>
+							<span> HOBBY </span>
+						</div>
+						<div class="nav-item-separator"></div>
 					</li>
 				</ul>
 				<div class="content">
 					<ProfileViewComponent v-if="type == 0" />
 					<SkillsViewComponent v-else-if="type == 1"/>
-					<HobbyViewComponent v-else/>
+					<HobbiesViewComponent v-else/>
 				</div>	
 			</div>
 		</div>
@@ -86,7 +101,47 @@
 		padding-bottom: 3%;
 		display: flex;
 		justify-content: center;
-		background-color: rgba(255,255,255,0.85);
+		background-color: rgba(255, 255, 255, 0.85);
+		.nav-container {
+			width: 13%;
+			height: auto;
+			display: flex;
+			flex-flow: column;
+			margin-right: 2%;
+			border-right: 1px solid #000000;
+			.nav-item {
+				width:100%;
+				font-size: 38px;
+				margin-top: 20px;
+				padding-bottom: 20px;
+				.item{	
+					display: flex;
+					margin-right: 120px;
+					margin-bottom: 32px;
+				}
+				.nav-item-separator {
+					width:100%;
+					border-bottom: 1px solid #000000;
+				}
+			}
+			.nav-item:hover {
+				.item{
+					color: #ee7800;
+					transform: scale(1.1, 1.1);
+					transition: 0.2s;
+				}
+			}
+		}
+		.content {
+			position: relative;
+			width: 70%;
+			height: auto;
+			background-color: rgba(255,255,255,0.4);
+			border-radius: 30px;
+		}
+		& li {
+			list-style: none;
+		}
 	}
 	//背景透過用
 	.background {
@@ -95,41 +150,5 @@
 		height: 100%;
 		background-image: url(assets/background4.jpg);
 		background-size: auto;
-	}
-	.nav-container {
-		width: 200px;
-		right: 1%;
-		display:flex;
-		flex-flow: column;
-		.nav-item {
-			width:70%;
-			font-size: 24px;
-			background-color: rgba(255,255,255,0.2);
-			box-shadow: 3px 3px 0 #1d004c;
-			color: #1d004c;
-			span.item {
-				margin:10%;
-			}
-		}
-		.nav-item:hover {
-			background-color: rgba(255,255,255,0.4);
-			box-shadow: 3px 3px 0 #ee7800;
-			color: #ee7800;
-		}
-		& li {
-			list-style:none;
-			padding: 5px;
-			margin: 10%;
-		}
-	}
-	.content {
-		position: relative;
-		width: 70%;
-		height: auto;
-		background-color: #f1f1f1;
-		outline: 2px solid #1d004c;
-		outline-offset: -0.5rem;
-		border-radius: 10px;
-		border: 3px solid #1d004c;
 	}
 </style>
