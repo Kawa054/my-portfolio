@@ -78,7 +78,7 @@
 						<div class="item">
 							<div v-if="type === 2">・</div>
 							<div v-else>　</div>
-							<span> HOBBY </span>
+							<span> HOBBIES </span>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
