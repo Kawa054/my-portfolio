@@ -50,7 +50,7 @@
                 this.$emit('change-header-hover', hover_id)
             },
             scroll(){
-                window.scrollTo({top: 900, left: 0, behavior: "smooth"}); 
+                window.scrollTo({top: 3900, left: 0, behavior: "smooth"}); 
             }
         }
     }
@@ -70,7 +70,6 @@
                     display: flex;
                     justify-content: space-between;
                     padding-bottom: 16px;
-                    transition: all 0.1s ease 0.14s;
                     .gnav-item-str {
                         display: block;
                         position: relative;
@@ -79,30 +78,24 @@
                         color: #fff;
                         text-decoration: none;
                         padding-left: 5px;
-                        transition: all 0.5s ease 0.06s;
                     }
                     .gnav-icon1 {
                         margin-top: -5px;
-                        transition: all 0.5s ease 0.06s;
                     }
                     .gnav-icon2 {
                         margin-top: -2px;
                         margin-right: 2px;
-                        transition: all 0.5s ease 0.06s;
                     }
                     .gnav-icon3 {
                         margin-top: -3px;
                         margin-right: 1px;
-                        transition: all 0.5s ease 0.06s;
                     }
                     .gnav-icon4 {
                         margin-top: -4px;
                         margin-right: -2px;
-                        transition: all 0.5s ease 0.06s;
                     }
                     .gnav-icon5 {
                         margin-right: 4px;
-                        transition: all 0.5s ease 0.06s;
                     }
                 }
                 .gnav-item:hover {
