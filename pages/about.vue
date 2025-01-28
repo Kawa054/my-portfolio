@@ -111,7 +111,7 @@
 			border-right: 1px solid #000000;
 			.nav-item {
 				width:100%;
-				font-size: 38px;
+				font-size: 30px;
 				margin-top: 20px;
 				padding-bottom: 20px;
 				.item{	

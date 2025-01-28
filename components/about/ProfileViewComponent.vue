@@ -97,11 +97,11 @@
             width: 70%;
             padding-bottom: 5px;
             padding-left: 10px;
-            border-bottom:3px solid #00FFFF;
+            border-bottom: 3px solid #00FFFF;
             border-color:#000;
             border-width:2px;
             .main-title{
-                font-size: 32px;
+                font-size: 36px;
                 color: #000;
             }
             .sub-title{

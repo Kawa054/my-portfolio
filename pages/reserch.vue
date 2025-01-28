@@ -2,9 +2,9 @@
 	import { gsap } from 'gsap'
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-	import ProfileViewComponent from "~/components/about/ProfileViewComponent.vue";
-	import SkillsViewComponent from "~/components/about/SkillsViewComponent.vue";
-	import HobbiesViewComponent from "~/components/about/HobbiesViewComponent.vue";
+	import DynAboutViewComponent from "~/components/reserch/DynAboutViewComponent.vue";
+	import KamTheoremViewComponent from "~/components/reserch/KamTheoremViewComponent.vue";
+	import ReserchResultViewComponent from "~/components/reserch/ReserchResultViewComponent.vue";
 
 	gsap.registerPlugin(ScrollTrigger); //Nuxt3でのgsapでscrollTrigger使うには必要らしい
 
@@ -84,9 +84,9 @@
 					</li>
 				</ul>
 				<div class="content">
-					<ProfileViewComponent v-if="type == 0" />
-					<SkillsViewComponent v-else-if="type == 1"/>
-					<HobbiesViewComponent v-else/>
+					<DynAboutViewComponent v-if="type == 0" />
+					<KamTheoremViewComponent v-else-if="type == 1"/>
+					<ReserchResultViewComponent v-else/>
 				</div>	
 			</div>
 		</div>
@@ -111,7 +111,7 @@
 			border-right: 1px solid #000000;
 			.nav-item {
 				width:100%;
-				font-size: 38px;
+				font-size: 30px;
 				margin-top: 20px;
 				padding-bottom: 20px;
 				.item{	
