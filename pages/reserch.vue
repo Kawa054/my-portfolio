@@ -4,6 +4,7 @@
 
 	import DynAboutViewComponent from "~/components/reserch/DynAboutViewComponent.vue";
 	import KamTheoremViewComponent from "~/components/reserch/KamTheoremViewComponent.vue";
+	import OrigamiAboutViewComponent from '~/components/reserch/OrigamiAboutViewComponent.vue';
 	import ReserchResultViewComponent from "~/components/reserch/ReserchResultViewComponent.vue";
 
 	gsap.registerPlugin(ScrollTrigger); //Nuxt3でのgsapでscrollTrigger使うには必要らしい
@@ -70,7 +71,7 @@
 						<div class="item">
 							<div v-if="type === 1">・</div>
 							<div v-else>　</div>
-							<span> KAM定理 </span>
+							<span> 折り紙と力学系 </span>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
@@ -78,14 +79,23 @@
 						<div class="item">
 							<div v-if="type === 2">・</div>
 							<div v-else>　</div>
-							<span> 研究内容 </span>
+							<span> KAM定理 </span>
+						</div>
+						<div class="nav-item-separator"></div>
+					</li>
+					<li class="nav-item" @click="type = 3">
+						<div class="item">
+							<div v-if="type === 3">・</div>
+							<div v-else>　</div>
+							<span> 研究結果 </span>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 				</ul>
 				<div class="content">
 					<DynAboutViewComponent v-if="type == 0" />
-					<KamTheoremViewComponent v-else-if="type == 1"/>
+					<OrigamiAboutViewComponent v-else-if="type == 1"/>
+					<KamTheoremViewComponent v-else-if="type == 2"/>
 					<ReserchResultViewComponent v-else/>
 				</div>	
 			</div>

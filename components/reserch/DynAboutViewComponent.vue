@@ -35,10 +35,14 @@
     }
 
     //latexで文章を書くclassを指定
+    const target0 = ref<HTMLElement>();
     const target1 = ref<HTMLElement>();
     const target2 = ref<HTMLElement>();
 
     onMounted(async () => {
+        if (target0.value) {
+            await window.MathJax.typesetPromise([target0.value]);
+        }
         if (target1.value) {
             await window.MathJax.typesetPromise([target1.value]);
         }
@@ -56,18 +60,23 @@
             <span class="sub-title"> 　　- 研究内容紹介1 -</span>
         </div>
         <div class="content">
-            <div class="content-text1">
-                このページでは、私の研究分野である力学系理論について簡単に説明します。<br>
-                力学系とは、時間発展の規則を数学的に定式化したもので、大きく分けて以下のような連続力学系(1)と離散力学系(2)からなります。
+            <div class="content_text1" ref="target0">
+                　このページでは、研究分野である力学系理論について簡単に説明します。<br><br>
+                　力学系理論とは、時間発展により変化するものを対象とする数学の分野で、原子サイズから惑星サイズの運動、流体、化学反応、脳波や睡眠などのリズム、人口の変動など様々な現象を力学系として表すことができます。
+                具体的には、\( \mathbb{R}^{n} \ \)やその開集合のような適当な空間を\( X \)、\( t \ \)に依らない写像\( \ \boldsymbol{f} : X \to X \ \) について、以下の微分方程式<br>
             </div> 
             <p ref="target1">
                 \begin{eqnarray}
                     \frac{d\boldsymbol{x}}{dt} =
-                    \boldsymbol{f}(\boldsymbol{x})
+                    \boldsymbol{f}(\boldsymbol{x}), \ \ \ \boldsymbol{x} \in X
                 \end{eqnarray}
             </p>
             <div class="content-text2" ref="target2">
-                なお、上で表される力学系は右辺の写像\( \ \boldsymbol{f} : X \to X \ \)が時間に依存しない自励系であり、私の研究では(2)の離散力学系を研究しています。
+                を自励的な連続力学系と呼びます。
+                なお、私の研究では、上の式を \( \boldsymbol{x}_{n+1} = \boldsymbol{f}(\boldsymbol{x}_{n}), \ \ (n=0,1, 2, ... ) \) のように離散的に表した「離散力学系」を対象としています。<br><br>
+                　離散力学系において、初期点\( \boldsymbol{x}_{0} \)を定めると写像\(  \boldsymbol{f} \)により点列\( \{ \boldsymbol{x}_{0}, \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, ... \} \)が得られ、これを軌道と呼びます。
+                力学系の研究では微分方程式そのものを解くことよりも、軌道や軌道の族の定性的な性質を調べることが多くあり、「相空間」自体や全軌道の概略を相空間上に示した「相図」が重要になってきます。
+                今ではカオス理論や分岐現象、安定性の解析など、力学系の軌道の性質を調べる研究が広く行われています。「太陽系は安定しているか？」という問いなど、面白い問題が多いです。
             </div> 
         </div>
     </div>
@@ -98,7 +107,7 @@
             }
         }
         .content{
-            width: 90%;
+            width: 87%;
             margin: 3%;
             .content-eq1{
                 margin: 1%;
