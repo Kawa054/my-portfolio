@@ -10,12 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@hsorby/vue3-katex": "^0.6.0-rc.7",
+    "@nuxt/image": "^1.9.0",
     "@tresjs/cientos": "^4.0.3",
     "@tresjs/nuxt": "^3.0.7",
     "gsap": "^3.12.5",
     "nuxt": "^3.15.1",
+    "postscribe": "^2.0.8",
     "three": "^0.172.0",
     "vue": "latest",
+    "vue-mathjax-next": "^0.0.6",
     "vue-router": "latest",
     "vue-scrollto": "^2.20.0"
   },
