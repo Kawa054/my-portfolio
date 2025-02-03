@@ -72,12 +72,12 @@
                 また、実際に数値計算を行ってみると、様々なモジュールに対して以下の例のように不変曲線が残り続けることが確認できました。<br><br>
             </div>
             <div class="content-img">
-                <NuxtImg src="/origami/result1.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/origami/result2.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/origami/result3.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/origami/result4.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/origami/result5.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/origami/result6.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
+                <NuxtImg src="/origami/result1.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/result2.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/result3.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/result4.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/result5.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/result6.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
             </div>
         </div>
     </div>
