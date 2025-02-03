@@ -67,12 +67,12 @@
                 \( \varepsilon \rightarrow 0 \ \)でこの力学系は可積分系で、\( V(x)=\sin x \ \)とすると相図は<br><br>
             </div> 
             <div class="content-img1">
-                <NuxtImg src="/dyn/pic1.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/dyn/pic2.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/dyn/pic3.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/dyn/pic4.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/dyn/pic5.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
-                <NuxtImg src="/dyn/pic6.jpg" alt="image" quality="70" sizes="md:100% lg:380px"/>
+                <NuxtImg src="/dyn/pic1.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/dyn/pic2.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/dyn/pic3.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/dyn/pic4.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/dyn/pic5.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/dyn/pic6.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
             </div> 
             <div class="content-text3" ref="target3">
                 のようになります。\( \varepsilon = 0 \ \)のときの上下を横断する直線が、\( \varepsilon \ \)を大きくするにつれ少なくなっていることが分かります。

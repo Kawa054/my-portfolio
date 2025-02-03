@@ -65,15 +65,15 @@
                 今回の研究では、<a href="https://sdgs.hokudai.ac.jp/approach-to-sdgs/interview/itw-6946/">人工血管などへの応用</a>が期待されている「なまこ折り」と呼ばれる折り方について、以下のような展開図（左図）とそれを上下繋げ、折り込んで出来る立体（右図）を考えます。<br><br>
             </div> 
             <div class="content-img">
-                <NuxtImg src="/origami/tess.png" alt="image" quality="70" sizes="md:100% lg:780px"/>
+                <NuxtImg src="/origami/tess.png" alt="image" quality="70" sizes="md:100% lg:780px" loading="lazy"/>
             </div> 
             <div class="content_text2" ref="target0">
                 　図中で緑色で示されている部分は１つの「モジュール」と呼ばれる部分で、黄色で示された部分はモジュールを縦に\( N \)個並べた部分です。
                 なまこ折りで出来る立体は<a href="https://www.ntticc.or.jp/ja/archive/works/undulating-origami-tessellations/">波状の円柱形</a>になるなど非自明な性質があり、この力学系を以下で考えていきます。<br><br>
             </div>
             <div class="content-img">
-                <NuxtImg src="/origami/w1.png" alt="image" quality="70" sizes="md:100% lg:680px"/>
-                <NuxtImg src="/origami/dr.png" alt="image" quality="70" sizes="md:100% lg:380px"/>
+                <NuxtImg src="/origami/w1.png" alt="image" quality="70" sizes="md:100% lg:680px" loading="lazy"/>
+                <NuxtImg src="/origami/dr.png" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
             </div> 
             <div class="content-text3" ref="target1">
                 　上図のように黄緑色の１モジュールについて、モジュール内部のジグザグと立体上のジグザグを対応させ、立体上のジグザグの一部を上図右のように2変数\( (d, \rho) \)で表します。
@@ -90,8 +90,8 @@
                 と書くことができます。パラメータを適当に決めた展開図とそれに対応する相図の例を一つ以下に載せておきます。<br><br>
             </div>
             <div class="content-img">
-                <NuxtImg src="/origami/ex1.png" alt="image" quality="70" sizes="md:100% lg:480px"/>
-                <NuxtImg src="/origami/pd1.jpg" alt="image" quality="70" sizes="md:100% lg:480px"/>
+                <NuxtImg src="/origami/ex1.png" alt="image" quality="70" sizes="md:100% lg:480px" loading="lazy"/>
+                <NuxtImg src="/origami/pd1.jpg" alt="image" quality="70" sizes="md:100% lg:480px" loading="lazy"/>
             </div>
             <div class="content-text4" ref="target2">
                 　この相図は格子状にいくつか初期点\( (d_0, \rho_0) \)を取り、写像\( \boldsymbol{M}(d, \rho) \)によって得られる軌道を各色で表しています。それぞれの色の軌道は、なまこ折りの立体と対応しています。
