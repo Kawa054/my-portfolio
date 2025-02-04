@@ -62,7 +62,7 @@
 						<div class="item">
 							<div v-if="type === 0">・</div>
 							<div v-else>　</div>
-							<span> PROFILE </span>
+							<span> 経歴 </span>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
@@ -70,7 +70,7 @@
 						<div class="item">
 							<div v-if="type === 1">・</div>
 							<div v-else>　</div>
-							<span> SKILLS </span>
+							<span> 技術 </span>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
@@ -78,7 +78,7 @@
 						<div class="item">
 							<div v-if="type === 2">・</div>
 							<div v-else>　</div>
-							<span> HOBBIES </span>
+							<span> 趣味 </span>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
@@ -103,7 +103,7 @@
 		justify-content: center;
 		background-color: rgba(255, 255, 255, 0.85);
 		.nav-container {
-			width: 13%;
+			width: auto;
 			height: auto;
 			display: flex;
 			flex-flow: column;
@@ -116,7 +116,8 @@
 				padding-bottom: 20px;
 				.item{	
 					display: flex;
-					margin-right: 120px;
+					margin-left: 30px;
+					margin-right: 60px;
 					margin-bottom: 32px;
 				}
 				.nav-item-separator {
