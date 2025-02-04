@@ -62,7 +62,7 @@
                 \begin{eqnarray}
                     \lim_{N\rightarrow \infty }\boldsymbol{M}(d, \rho) = (d, \rho + \xi(d))
                 \end{eqnarray}
-                と書けることが分かりました。
+                と書けることが計算していくと分かりました。
                 これは、KAM定理のページで紹介した標準写像の形と似ており、折り紙写像ではモジュール数\( N \)が摂動パラメータ\( \varepsilon \)と関係していることが分かります。
                 実際に計算すると、\( \varepsilon = N^{-1} \)となっています。さて、この計算結果から折り紙写像にもKAM定理を適用することができ、以下の非退化条件
                 \begin{eqnarray}
@@ -78,6 +78,9 @@
                 <NuxtImg src="/origami/result4.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
                 <NuxtImg src="/origami/result5.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
                 <NuxtImg src="/origami/result6.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+            </div>
+            <div class="content_text2">
+                　現在はより一般的な系や、散逸的な折り紙の系にKAM定理を適用することで、数理構造とそれから得られる折り紙の研究を進めています。
             </div>
         </div>
     </div>
