@@ -3,7 +3,7 @@
 		<div class="background">
 			<!-- メインページ -->
 			<div class="container">
-				<div class="text-container" data-title="CONTACT">
+				<div class="text-container" data-title="THANK YOU FOR VISITING MY PORTFOLIO SITE!">
 					<div class="text">
 						ポートフォリオサイトの閲覧、ありがとうございました。<br>
 						何かご連絡等があれば、以下のメールアドレスまでお願いします。<br><br>
