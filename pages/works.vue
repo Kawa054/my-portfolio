@@ -72,7 +72,7 @@
 					<li class="nav-item" @click="type = 1">
 						<div class="item">
 							<NuxtImg class="item-img" src="/works/mindiger.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
-							<div class="item-name"> MinDiger(game) </div>
+							<div class="item-name"> MinDiger(Game) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>

@@ -25,13 +25,19 @@
 <template>
     <div class="view-container">
         <div class="title">
-            <span class="main-title"> RollingSnow (GAME) </span>
+            <span class="main-title"> RollingSnow (Game) </span>
             <span class="sub-title"> 　　- 制作期間 : 1週間程(高専2年次) -</span>
         </div>
         <div class="content">
             <div class="content_text1">
-                　現在記載中... 
-            </div> 
+                　当時まだ電算部でなく、「ゲーム制作同好会」という名前だった高専の同好会で、突発的に「Unity インターハイ」というものに参加してみよう！となりました。
+                この頃はProcessingやJavaでゲームを作っており3Dゲームは作ったことがありませんでした。
+                また、コンテストまで一週間くらいしかないという状況でしたが、できるだけやれるとこまで作ってみようということで作成しました。
+                (今考えると一週間でUnity勉強して3Dゲーム作ったの普通にヤバい...？)
+            </div>
+            <div class="content-img1">
+                <NuxtImg src="/works/rs.png" alt="image" quality="90" sizes="md:100% lg:760px" loading="lazy"/>
+            </div>
         </div>
     </div>
 </template>
@@ -65,6 +71,10 @@
             margin: 3%;
             .content-eq1{
                 margin: 1%;
+            }
+            .content-img1{
+                text-align: center;
+                margin: 2%;
             }
         }
     }
