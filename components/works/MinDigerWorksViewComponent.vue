@@ -243,6 +243,7 @@
                 margin: 2%;
             }
             .accordion {
+                margin-left: -4%;
                 .accordion-contents{
                     list-style: none;
                 }
