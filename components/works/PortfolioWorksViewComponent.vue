@@ -51,7 +51,7 @@
 <style lang="scss" scoped>
 	.view-container {
         width: 100%;
-        height: 70vh;
+        height: auto;
         position: relative;
         padding-top: 22px;
         padding-left: 30px;
