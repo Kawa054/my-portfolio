@@ -53,7 +53,7 @@
 <template>
     <div class="view-container">
         <div class="title">
-            <span class="main-title"> MinDiger </span>
+            <span class="main-title"> MinDiger (Game) </span>
             <span class="sub-title"> 　- 制作期間 : 4, 5か月程度(大学3年生の夏頃) -</span>
         </div>
         <div class="content">
@@ -176,10 +176,10 @@
                                     そこで、ロード画面を追加しロードが終わるまで読み込み画面を流すようにしました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg preload src="/works/mindiger/loadgif.gif" alt="image" quality="80" sizes="md:100% lg:690px" />
+                                    <NuxtImg preload src="/works/mindiger/loadgif.gif" alt="image" quality="80" sizes="md:100% lg:590px" />
                                 </div>
                                 <p>
-                                    　街へ忘れ物をした際などに、再度戻りロードするとユーザの体験が損なわれるため、最終的には遷移一回分の情報をメモリに保持しロードしないようにしました。
+                                    　街へ忘れ物をした際などに、再度戻りロードするとユーザの体験が損なわれるため、最終的には遷移一回分の情報をメモリに保持しロードしないようにしました。(上の動画ではローディングしているが、実際には隣接する移動であればローディングしない)
                                 </p>
                             </div>
                         </transition>
@@ -211,7 +211,7 @@
         padding-left: 30px;
         justify-content:space-between;
         .title{
-            width: 42%;
+            width: 52%;
             padding-bottom: 5px;
             padding-left: 10px;
             border-bottom:3px solid #00FFFF;
