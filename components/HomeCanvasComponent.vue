@@ -1,15 +1,25 @@
 <script setup lang="ts">
 	import { shallowRef } from 'vue';
-	import { TresCanvas, useRenderLoop } from '@tresjs/core';
-	import { OrbitControls } from '@tresjs/cientos';
-	import { Vector2 } from 'three'
+	import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from 'three';
+	import { TresCanvas, useLoader, useRenderLoop } from '@tresjs/core';
+	import { OrbitControls, Text3D } from '@tresjs/cientos';
+	import { Vector2, TextureLoader } from 'three';
 
 	const blobRef = shallowRef(null);
+
+	const gl = {
+		clearColor: '#000000',
+		shadows: true,
+		alpha: false,
+		shadowMapType: BasicShadowMap,
+		outputColorSpace: SRGBColorSpace,
+		toneMapping: NoToneMapping,
+	};
 
 	const uniforms = {
 		uTime: { value: 0 },
 		uAmplitude: { value: new Vector2(0.1, 0.1) },
-		uFrequency: { value: new Vector2(20, 5) },
+		uFrequency: { value: new Vector2(2, 2) },
 	}
 
 	const vertexShader = `
@@ -42,23 +52,58 @@
 
 	onLoop(({ delta, elapsed }) => {
 		if (blobRef.value) {
-			blobRef.value.material.uniforms.uTime.value = elapsed
+			blobRef.value.uniforms.uTime.value = elapsed
 		}
 	});
 </script>
 
 <template>
-	<TresCanvas clear-color="#000" shadows alpha>
-		<OrbitControls />
-		<TresPerspectiveCamera :position="[11, 11, 11]" :fov="70" :aspect="1" :near="0.1" :far="1000" />
-		<TresMesh ref="blobRef" :position="[0, 4, 0]">
-			<TresSphereGeometry :args="[2, 32, 32]" />
-			<TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
-		</TresMesh>
-
-		<TresMesh :rotation="[-Math.PI / 2, 0, 0]">
-			<TresPlaneGeometry :args="[10, 10, 10, 10]" />
-			<TresMeshBasicMaterial color="#444" />
-		</TresMesh>
-	</TresCanvas>
+  <TresCanvas v-bind="gl" class="canvas-container">
+    <TresPerspectiveCamera :position="[8, 2, 13]" />
+	<OrbitControls/>
+    <Suspense>
+		<Text3D
+			:position="[0, 4, 0]"
+			text="ようこそポートフォリオサイトへ！"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+	<Suspense>
+		<Text3D
+			:position="[0, 3, 0]"
+			text="マウス操作でカメラを自由に操作できます"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+	<Suspense>
+		<Text3D
+			:position="[0, 2, 0]"
+			text="スクロール: 拡大・縮小"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+	<Suspense>
+		<Text3D
+			:position="[0, 1, 0]"
+			text="ドラッグ: カメラ角度変更"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+    <TresDirectionalLight :position="[0, 10, 4]" :intensity="1.2" cast-shadow />
+    <TresGridHelper />
+  </TresCanvas>
 </template>
+
+<style lang="scss" scoped>
+	.canvas-container {
+		left: 70%;
+	}
+</style>

@@ -53,7 +53,7 @@
 	import ContactCanvasComponent from "~/components/ContactCanvasComponent.vue";
 	import HeaderComponent from "~/components/HeaderComponent.vue";
 
-	const currentCanvas = ref("AboutCanvasComponent");
+	const currentCanvas = ref("HomeCanvasComponent");
 
 	const recieve_hover_id = (data) => {
 	const str = ["HomeCanvasComponent", "AboutCanvasComponent", "WorksCanvasComponent", "ReserchCanvasComponent", "ContactCanvasComponent"]
@@ -80,9 +80,10 @@
 			left: 0;
 			width: 100%;
 			height: 87vh;
+			overflow: hidden;
 			.page_canvas {
-				width: 100%;
-				height: 100%;
+				width: 128%;
+				height: 142%;
 			}
 			.title {
 				position: absolute;
