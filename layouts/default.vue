@@ -1,37 +1,45 @@
 <template>
 	<div>
 		<div class="container">
-
+			<!-- ウィンドウタイトル -->
 			<Head>
-				<Title>portfolio-test</Title>
+				<Title>Ichikawa-Portfolio</Title>
 			</Head>
+
 			<!-- ページトップ -->
 			<div class="top_container">
 
 				<!-- ページタイトル部分 -->
 				<div class="title">
-					<h1 class="title_main">
+					<p class="title_main">
 						Portfolio
-					</h1>
-					<h2 class="title_sub">
+					</p>
+					<p class="title_sub">
 						Ryutaro Ichikawa
-					</h2>
-
-					<!-- ヘッダー部分 -->
-					<HeaderComponent @change-header-hover="recieve_hover_id" class="header" />
+					</p>
 				</div>
 
 				<!-- キャンバス部分 -->
 				<div class="page_canvas">
 					<component :is="canvas[currentCanvas]"></component>
 				</div>
-
 			</div>
+			
+			<!-- ヘッダー部分 -->
+			<HeaderComponent @change-header-hover="recieve_hover_id"/>
 
 			<!-- ページ下部 -->
 			<div class="main">
 				<slot></slot>
 			</div>
+
+			<!-- フッター -->
+			<footer>
+				<p>
+					© 2025 Ryutaro Ichikawa
+				</p>
+			</footer>
+
 		</div>
 	</div>
 </template>
@@ -45,7 +53,7 @@
 	import ContactCanvasComponent from "~/components/ContactCanvasComponent.vue";
 	import HeaderComponent from "~/components/HeaderComponent.vue";
 
-	const currentCanvas = ref("AboutCanvasComponent");
+	const currentCanvas = ref("HomeCanvasComponent");
 
 	const recieve_hover_id = (data) => {
 	const str = ["HomeCanvasComponent", "AboutCanvasComponent", "WorksCanvasComponent", "ReserchCanvasComponent", "ContactCanvasComponent"]
@@ -71,16 +79,17 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100vh;
+			height: 87vh;
+			overflow: hidden;
 			.page_canvas {
-				width: 100%;
-				height: 100%;
+				width: 128%;
+				height: 142%;
 			}
 			.title {
 				position: absolute;
 				z-index: 20;
 				width: 100%;
-				left: -24%;
+				left: -25%;
 				text-decoration-color: #fff;
 				pointer-events: none;
 				.title_main {
@@ -88,28 +97,28 @@
 					-webkit-text-stroke-width: 1px;
 					-webkit-text-stroke-color: #fff;
 					font-family: "Dancing Script", serif;
-					font-size: 152px;
+					font-size: 9vw;
 					font-weight: 500;
 					font-style: normal;
+					position: relative;
 				}
 				.title_sub {
 					color: #fff;
 					font-family: "Dancing Script", serif;
-					font-size: 48px;
+					font-size: 3.7vw;
 					font-weight: 500;
 					font-style: normal;
 					position: relative;
-					bottom: 80px;
-					left: -80px;
+					top:-10vh;
 				}
 			}
-			.header {
-			position: relative;
-			z-index: 30;
-			pointer-events: auto;
-			left: 24%;
-			margin-top: 363px;
-			}
+		}
+		footer {
+			display: flex;
+			justify-content: center;
+			padding: 3px;
+			background-color: #000000;
+			color: #ffffff;
 		}
 	}
 </style>

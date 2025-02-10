@@ -9,7 +9,7 @@
 	const uniforms = {
 		uTime: { value: 0 },
 		uAmplitude: { value: new Vector2(0.1, 0.1) },
-		uFrequency: { value: new Vector2(20, 5) },
+		uFrequency: { value: new Vector2(210, 115) },
 	}
 
 	const vertexShader = `
@@ -50,7 +50,7 @@
 <template>
 	<TresCanvas clear-color="#000" shadows alpha>
 		<OrbitControls />
-		<TresPerspectiveCamera :position="[11, 11, 11]" :fov="70" :aspect="1" :near="0.1" :far="1000" />
+		<TresPerspectiveCamera :position="[8, 10, 23]"/>
 		<TresMesh ref="blobRef" :position="[0, 4, 0]">
 			<TresSphereGeometry :args="[2, 32, 32]" />
 			<TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
