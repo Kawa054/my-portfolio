@@ -25,13 +25,20 @@
 				<div class="page_canvas">
 					<component :is="canvas[currentCanvas]"></component>
 				</div>
-
 			</div>
 
 			<!-- ページ下部 -->
 			<div class="main">
 				<slot></slot>
 			</div>
+
+			<!-- フッター -->
+			<footer>
+				<p>
+					© 2025 Ryutaro Ichikawa
+				</p>
+			</footer>
+
 		</div>
 	</div>
 </template>
@@ -103,13 +110,13 @@
 					left: -80px;
 				}
 			}
-			.header {
-			position: relative;
-			z-index: 30;
-			pointer-events: auto;
-			left: 24%;
-			margin-top: 363px;
-			}
+		}
+		footer {
+			display: flex;
+			justify-content: center;
+			padding: 3px;
+			background-color: #000000;
+			color: #ffffff;
 		}
 	}
 </style>

@@ -50,7 +50,7 @@
                 this.$emit('change-header-hover', hover_id)
             },
             scroll(){
-                window.scrollTo({top: 3900, left: 0, behavior: "smooth"}); 
+                window.scrollTo({top: 800, left: 0, behavior: "smooth"}); 
             }
         }
     }
@@ -58,6 +58,11 @@
 
 <style lang="scss" scoped>
     .header {
+        position: relative;
+        z-index: 30;
+        pointer-events: auto;
+        left: 24%;
+        margin-top: 363px;
         .container {
             margin-right: 14%;
             margin-left: 14%;
