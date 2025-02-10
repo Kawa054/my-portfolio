@@ -1,24 +1,22 @@
 <template>
 	<div>
 		<div class="container">
-
+			<!-- ウィンドウタイトル -->
 			<Head>
 				<Title>Ichikawa-Portfolio</Title>
 			</Head>
+
 			<!-- ページトップ -->
 			<div class="top_container">
 
 				<!-- ページタイトル部分 -->
 				<div class="title">
-					<h1 class="title_main">
+					<p class="title_main">
 						Portfolio
-					</h1>
-					<h2 class="title_sub">
+					</p>
+					<p class="title_sub">
 						Ryutaro Ichikawa
-					</h2>
-
-					<!-- ヘッダー部分 -->
-					<HeaderComponent @change-header-hover="recieve_hover_id" class="header" />
+					</p>
 				</div>
 
 				<!-- キャンバス部分 -->
@@ -26,6 +24,9 @@
 					<component :is="canvas[currentCanvas]"></component>
 				</div>
 			</div>
+			
+			<!-- ヘッダー部分 -->
+			<HeaderComponent @change-header-hover="recieve_hover_id"/>
 
 			<!-- ページ下部 -->
 			<div class="main">
@@ -78,7 +79,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100vh;
+			height: 87vh;
 			.page_canvas {
 				width: 100%;
 				height: 100%;
@@ -87,7 +88,7 @@
 				position: absolute;
 				z-index: 20;
 				width: 100%;
-				left: -24%;
+				left: -25%;
 				text-decoration-color: #fff;
 				pointer-events: none;
 				.title_main {
@@ -95,19 +96,19 @@
 					-webkit-text-stroke-width: 1px;
 					-webkit-text-stroke-color: #fff;
 					font-family: "Dancing Script", serif;
-					font-size: 152px;
+					font-size: 9vw;
 					font-weight: 500;
 					font-style: normal;
+					position: relative;
 				}
 				.title_sub {
 					color: #fff;
 					font-family: "Dancing Script", serif;
-					font-size: 48px;
+					font-size: 3.7vw;
 					font-weight: 500;
 					font-style: normal;
 					position: relative;
-					bottom: 80px;
-					left: -80px;
+					top:-10vh;
 				}
 			}
 		}
