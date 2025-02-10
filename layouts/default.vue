@@ -3,7 +3,7 @@
 		<div class="container">
 
 			<Head>
-				<Title>portfolio-test</Title>
+				<Title>Ichikawa-Portfolio</Title>
 			</Head>
 			<!-- ページトップ -->
 			<div class="top_container">
