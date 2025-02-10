@@ -1,8 +1,10 @@
 
 <script setup lang="ts">
-	import { gsap } from 'gsap'
-
-	definePageMeta({
+	import { gsap } from 'gsap';
+    
+    const videoId = ref<string>("fPgGkokEfFU");
+	
+    definePageMeta({
 		layout: false,
 		scrollToTop: false,
 	});
@@ -30,13 +32,32 @@
         </div>
         <div class="content">
             <div class="content_text1">
-                　当時まだ電算部でなく、「ゲーム制作同好会」という名前だった高専の同好会で、突発的に「Unity インターハイ」というものに参加してみよう！となりました。
+                　当時まだ電算部でなく、「ゲーム制作同好会」という名前だった高専の同好会で、「Unity インターハイ」というコンテストに参加してみよう！となりました。
                 この頃はProcessingやJavaでゲームを作っており3Dゲームは作ったことがありませんでした。
-                また、コンテストまで一週間くらいしかないという状況でしたが、できるだけやれるとこまで作ってみようということで作成しました。
-                (今考えると一週間でUnity勉強して3Dゲーム作ったの普通にヤバい...？)
+                また、コンテストまで一週間くらいしかないという状況でしたが、やれるとこまで作ってみようということで作成しました。
             </div>
             <div class="content-img1">
-                <NuxtImg src="/works/rs.png" alt="image" quality="90" sizes="md:100% lg:760px" loading="lazy"/>
+                <NuxtImg src="/works/rs.png" alt="image" quality="80" sizes="md:100% lg:660px" loading="lazy"/>
+            </div>
+            <div class="content_text1">
+                　ゲームのコンセプトとしては、雪玉を操作しより早くゴールを目指すタイムアタックのゲームとして作成しました。
+                雪玉が転がれば転がるほど大きくなっていき、それに伴い操作が難しくなります。
+                また、運動エネルギーも大きくなるため、壁に当たったときの反動も大きくなるといった仕様にしました。
+                なお雪玉が壊れるとゲームオーバーになります。以下はコンテスト時の簡単なプレイ映像です(クリックするとYoutubeが再生されます)。
+            </div>
+            <div class="content-youtube">
+                <ScriptYouTubePlayer :video-id/>
+            </div>
+            <div class="content_text1">
+                　このゲームは、「雪玉が大きくなっていくにつれ操作が難しくなる」という部分に面白さや難しさを感じられるよう作成していました。
+                結果的にコンテストの一次審査には通ったのですが、本選には選ばれず審査員のコメントとして、「雪玉の操作が難しく、面白さや爽快感を欠いている」という評価をいただきました。
+                これは、当初自分が設計した面白さが逆に悪い体験に繋がり、ユーザが予想通り面白さの体験をできるわけではないという課題に難しさを感じました。
+                <br><br>
+                　そこで、ちょうどコンテスト後にある学祭でゲームを販売する予定であったため、ゲームを遊ぶ層のことを考え、ゲームが得意な人からそうでない人に遊んでもらいどう感じるかをまとめ、最初のステージでは操作部分をゲームが得意でない層が簡単と感じるように実装し直しました。
+                他にも、UIのデザインを調整し説明書などを見なくても遊べるようにしました。結果的に、子どもから大人まで遊んでいる人の意見を聞くと、「操作が楽しい」、「スピード感が爽快」という意見を多くもらえ、当初の課題を解決することが出来ました。
+                <br><br>
+                　些細なゲーム制作経験でしたが、制作の際は必ずユーザの層を考え、その層の中でも扱いが得意でないユーザがどう感じるかを意識するようにしました。
+                他にも、自分や慣れている層の人のみでなく様々な人に、設計した面白さを届けられているかを実際に触ってもらい確認するようにしています。
             </div>
         </div>
     </div>
@@ -45,7 +66,7 @@
 <style lang="scss" scoped>
 	.view-container {
         width: 100%;
-        height: 70vh;
+        height: auto;
         position: relative;
         padding-top: 22px;
         padding-left: 30px;
@@ -75,6 +96,10 @@
             .content-img1{
                 text-align: center;
                 margin: 2%;
+            }
+            .content-youtube{
+                margin: 2% auto;
+                width: 80%;
             }
         }
     }

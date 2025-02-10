@@ -21,9 +21,11 @@
     "vue": "latest",
     "vue-mathjax-next": "^0.0.6",
     "vue-router": "latest",
-    "vue-scrollto": "^2.20.0"
+    "vue-scrollto": "^2.20.0",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
+    "@nuxt/scripts": "^0.10.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "sass-embedded": "^1.83.4"
   }
