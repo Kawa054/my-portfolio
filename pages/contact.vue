@@ -85,8 +85,8 @@
 	.text-container {
 		position: relative;
 		width: 60%;
-		height: 55vh;
-		//height: auto;
+		min-height: 56vh;
+		height: auto;
 		padding: 2.5rem 2rem 1rem;
 		background-color: #f1f1f1;
 		outline: 2px solid #333;

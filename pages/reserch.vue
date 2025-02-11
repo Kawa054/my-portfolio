@@ -111,10 +111,9 @@
 		padding-bottom: 3%;
 		display: flex;
 		justify-content: center;
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.869);
 		.nav-container {
 			width: 15%;
-			height: auto;
 			display: flex;
 			flex-flow: column;
 			margin-right: 2%;
@@ -144,6 +143,7 @@
 		.content {
 			position: relative;
 			width: 70%;
+			min-height: 76vh;
 			height: auto;
 			background-color: rgba(255,255,255,0.4);
 			border-radius: 30px;
