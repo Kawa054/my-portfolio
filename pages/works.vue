@@ -134,7 +134,7 @@
 		padding-bottom: 3%;
 		display: flex;
 		justify-content: center;
-		background-color: rgba(255, 255, 255, 0.75);
+		background-color: rgba(255, 255, 255, 0.85);
 		.nav-container {
 			width: 15%;
 			height: auto;
@@ -188,6 +188,7 @@
 		.content {
 			position: relative;
 			width: 70%;
+			min-height: 76vh;
 			height: auto;
 			background-color: rgba(255,255,255,0.4);
 			border-radius: 30px;

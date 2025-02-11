@@ -4,25 +4,35 @@
             <nav>
                 <!-- ヘッダー: アイコン ＋ ページ名 -->
                 <ul class="gnav">
-                    <li v-on:mouseover="emit('change-header-hover', 0)" v-on:click="scroll()" class="gnav-item">
-                        <HomeIcon class="gnav-icon1" width="3.4vw" height="3.4vh" fill="#fff"></HomeIcon>
-                        <NuxtLink class="gnav-item-str" to="/"> Home </NuxtLink>
+                    <li>
+                        <NuxtLink v-on:mouseover="emit('change-header-hover', 0)" v-on:click="scroll()" class="gnav-item" to="/">
+                            <HomeIcon class="gnav-icon1" width="3.4vw" height="3.4vh" fill="#fff"></HomeIcon>
+                            <div class="gnav-item-str"> Home </div>
+                        </NuxtLink>
                     </li>
-                    <li v-on:mouseover="emit('change-header-hover', 1)" v-on:click="scroll()" class="gnav-item">
-                        <AboutIcon class="gnav-icon2" width="3.4vw" height="3.4vh" fill="#fff"></AboutIcon>
-                        <NuxtLink class="gnav-item-str" to="/about"> About </NuxtLink>
+                    <li>
+                        <NuxtLink v-on:mouseover="emit('change-header-hover', 1)" v-on:click="scroll()" class="gnav-item" to="/about">
+                            <AboutIcon class="gnav-icon2" width="3.4vw" height="3.4vh" fill="#fff"></AboutIcon>
+                            <div class="gnav-item-str"> About </div>
+                        </NuxtLink>
                     </li>
-                    <li v-on:mouseover="emit('change-header-hover', 2)" v-on:click="scroll()" class="gnav-item">
-                        <WorksIcon class="gnav-icon3" width="3.4vw" height="3.4vh" fill="#fff"></WorksIcon>
-                        <NuxtLink class="gnav-item-str" to="/works"> Works </NuxtLink>
+                    <li>
+                        <NuxtLink v-on:mouseover="emit('change-header-hover', 2)" v-on:click="scroll()" class="gnav-item" to="/works">
+                            <WorksIcon class="gnav-icon3" width="3.4vw" height="3.4vh" fill="#fff"></WorksIcon>
+                            <div class="gnav-item-str"> Works </div>
+                        </NuxtLink>
                     </li>
-                    <li v-on:mouseover="emit('change-header-hover', 3)" v-on:click="scroll()" class="gnav-item">
-                        <ReserchIcon class="gnav-icon4" width="3.4vw" height="3.4vh" fill="#fff"></ReserchIcon>
-                        <NuxtLink class="gnav-item-str" to="/reserch"> Reserch </NuxtLink>
+                    <li>
+                        <NuxtLink v-on:mouseover="emit('change-header-hover', 3)" v-on:click="scroll()" class="gnav-item" to="/reserch">
+                            <ReserchIcon class="gnav-icon4" width="3.4vw" height="3.4vh" fill="#fff"></ReserchIcon>
+                            <div class="gnav-item-str"> Reserch </div>
+                        </NuxtLink> 
                     </li>
-                    <li v-on:mouseover="emit('change-header-hover', 4)" v-on:click="scroll()" class="gnav-item">
-                        <ContactIcon class="gnav-icon5" width="3.4vw" height="3.4vh" fill="#fff"></ContactIcon>
-                        <NuxtLink class="gnav-item-str" to="/contact"> Contact </NuxtLink>
+                    <li> 
+                        <NuxtLink v-on:mouseover="emit('change-header-hover', 4)" class="gnav-item" to="/contact">
+                            <ContactIcon class="gnav-icon5" width="3.4vw" height="3.4vh" fill="#fff"></ContactIcon>
+                            <div class="gnav-item-str" v-on:click="scroll()"> Contact </div>
+                        </NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -86,19 +96,14 @@
                         text-decoration: none;
                     }
                     .gnav-icon1 {
-                        margin-top: -5px;
                     }
                     .gnav-icon2 {
-                        margin-top: -2px;
                     }
                     .gnav-icon3 {
-                        margin-top: -3px;
                     }
                     .gnav-icon4 {
-                        margin-top: -4px;
                     }
                     .gnav-icon5 {
-
                     }
                 }
                 .gnav-item:hover > * {
