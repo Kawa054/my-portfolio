@@ -58,13 +58,13 @@
             </div> 
             <p ref="target1">
                 \begin{eqnarray}
-                    x_{m+1} &=& x_{m} + \varepsilon V(x)  \\  
+                    x_{m+1} &=& x_{m} + \varepsilon V(x_m)  \\  
                     y_{m+1} &=& y_{m} + x_{m+1}
                 \end{eqnarray}
             </p>
             <div class="content-text2" ref="target2">
                 で定義される標準写像(Standard Map)についての様子を見たいと思います。なお、\( (x_{m}, y_{m}) \in \mathbb{T}^2 \) (2次元トーラス)、\( \varepsilon > 0 \ \)を摂動パラメーター、\( V(x) \ \)は解析的な関数とします。
-                \( \varepsilon \rightarrow 0 \ \)でこの力学系は可積分系で、\( V(x)=\sin x \ \)とすると相図は<br><br>
+                \( \varepsilon \rightarrow 0 \ \)でこの力学系は可積分系となります。可積分系とは、簡単にいうと「解ける」系のことを指します。\( V(x)=\sin x \ \)とすると相図は<br><br>
             </div> 
             <div class="content-img1">
                 <NuxtImg src="/dyn/pic1.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
@@ -140,6 +140,10 @@
             }
             .content-img1{
                 text-align: center;
+            }
+            .content-youtube{
+                margin: 2% auto;
+                width: 80%;
             }
         }
     }

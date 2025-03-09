@@ -35,6 +35,7 @@
     const target0 = ref<HTMLElement>();
     const target1 = ref<HTMLElement>();
     const target2 = ref<HTMLElement>();
+    const target3 = ref<HTMLElement>();
 
     onMounted(async () => {
         if (target0.value) {
@@ -45,6 +46,9 @@
         }
         if (target2.value) {
             await window.MathJax.typesetPromise([target2.value]);
+        }
+        if (target3.value) {
+            await window.MathJax.typesetPromise([target3.value]);
         }
     });  
 
@@ -79,8 +83,39 @@
                 <NuxtImg src="/origami/result5.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
                 <NuxtImg src="/origami/result6.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
             </div>
-            <div class="content_text2">
-                　現在はより一般的な系や、散逸的な折り紙の系にKAM定理を適用することで、数理構造とそれから得られる折り紙の研究を進めています。
+            <div class="content_text2" ref="target1">
+                　現在はより一般的な系や、散逸的な折り紙の系にKAM定理を適用することで、数理構造とそれから得られる折り紙の研究を進めています。例えば、写像の形が\( N \rightarrow \infty \)としたとき
+                \begin{eqnarray}
+                    \lim_{N\rightarrow \infty }\boldsymbol{M}(d, \rho) = (\lambda d + \mu, \rho + \xi(d))
+                \end{eqnarray}
+                となるような折り紙を考え、\( \mu=0 \ \)のときの相図の様子を見てみましょう。
+                すると、十分\( \ N \ \)が大きいとき、点アトラクターが消え、以下のように\( \ d=0 \ \)でアトラクター(軌道が吸い込まれている領域)が発生しています。<br><br>
+            </div>
+            <div class="content-img">
+                <NuxtImg src="/origami/pd1_1.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd1_2.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd1_3.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd1_4.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd1_5.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd1_6.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+            </div>
+            <div class="content_text2" ref="target2">
+                　しかし、\( d=0 \ \)で写像はそれ以上軌道を生成出来ないためこの相図はあまり有用とは言えません。
+                そこで、\(  \mu \ \)を上手く変更することでこのアトラクターの位置を変えることができます。以下は\( \ \mu= 0.05\ \)のときの相図です。<br><br>
+            </div>
+            <div class="content-img">
+                <NuxtImg src="/origami/pd2_1.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd2_2.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd2_3.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd2_4.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd2_5.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+                <NuxtImg src="/origami/pd2_6.jpg" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
+            </div>
+            <div class="content_text2" ref="target3">
+                　この\(\ \mu \ \)は、以下のように折り紙のモジュール間に追加した構造と対応しており、この水色部分が与える影響等を散逸系におけるKAM定理(KAM Theory for Comformally Symplectic Systems)を用いて研究しています。<br><br>
+            </div>
+             <div class="content-img">
+                <NuxtImg src="/origami/tess1.png" alt="image" quality="70" sizes="md:100% lg:380px" loading="lazy"/>
             </div>
         </div>
     </div>
