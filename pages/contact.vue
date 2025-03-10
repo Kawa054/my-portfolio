@@ -72,7 +72,7 @@
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		background-color: rgba(255,255,255,0.85);
+		background-color: rgba(255,255,255,0.9);
 	}
 	//背景透過用
 	.background {

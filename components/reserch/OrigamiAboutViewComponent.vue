@@ -91,12 +91,26 @@
             </div>
             <div class="content-img">
                 <NuxtImg src="/origami/ex1.png" alt="image" quality="70" sizes="md:100% lg:480px" loading="lazy"/>
-                <NuxtImg src="/origami/pd1.jpg" alt="image" quality="70" sizes="md:100% lg:480px" loading="lazy"/>
+                <NuxtImg src="/origami/result2.jpg" alt="image" quality="70" sizes="md:100% lg:480px" loading="lazy"/>
             </div>
             <div class="content-text4" ref="target2">
-                　この相図は格子状にいくつか初期点\( (d_0, \rho_0) \)を取り、写像\( \boldsymbol{M}(d, \rho) \)によって得られる軌道を各色で表しています。それぞれの色の軌道は、なまこ折りの立体と対応しています。
+                　この相図は格子状にいくつか初期点\( (d_0, \rho_0) \)を取り、写像\( \boldsymbol{M}(d, \rho) \)によって得られる軌道を各色で表しています。
+                それぞれの色の軌道は、以下のようになまこ折りの立体と対応しています。<br><br>
             </div>
-    
+            <div class="content-img">
+                <NuxtImg src="/origami/pd_shapes1.png" alt="image" quality="70" sizes="md:100% lg:480px" loading="lazy"/>
+            </div>
+            <div class="content-text5">
+                　<br>
+                　例えば、以下のような、研究のように上下は繋がっていませんが折り紙を折ったシミュレーション結果を見てみましょう。<br><br>
+            </div>
+            <div class="content-youtube">
+                <ScriptYouTubePlayer video-id="4up8zHOO_Go"/>
+            </div>
+            <div class="content-text5">
+                　<br>
+                　最初の円柱形は、相図でいう点や楕円軌道と対応しており、反り返りだしたときの挙動が上下を横断する直線形と対応しています。
+            </div>
         </div>
     </div>
 </template>

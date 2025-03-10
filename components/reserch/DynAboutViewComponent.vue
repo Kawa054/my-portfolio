@@ -4,6 +4,9 @@
     import { ref, onMounted } from 'vue'
 
     const formula = ref('$$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$')
+    const videoId = ref<string>("xSwN9b2oQ40");
+    const videoId1 = ref<string>("xSwN9b2oQ40");
+    const videoId2 = ref<string>("qKQt3-ABw7g");
 
 	definePageMeta({
 		layout: false,
@@ -76,8 +79,14 @@
                 なお、私の研究では、上の式を \( \boldsymbol{x}_{n+1} = \boldsymbol{f}(\boldsymbol{x}_{n}), \ \ (n=0,1, 2, ... ) \) のように離散的に表した「離散力学系」を対象としています。<br><br>
                 　離散力学系において、初期点\( \boldsymbol{x}_{0} \)を定めると写像\(  \boldsymbol{f} \)により点列\( \{ \boldsymbol{x}_{0}, \boldsymbol{x}_{1}, \boldsymbol{x}_{2}, ... \} \)が得られ、これを軌道と呼びます。
                 力学系の研究では微分方程式そのものを解くことよりも、軌道や軌道の族の定性的な性質を調べることが多くあり、「相空間」自体や全軌道の概略を相空間上に示した「相図」が重要になってきます。
-                今ではカオス理論や分岐現象、安定性の解析など、力学系の軌道の性質を調べる研究が広く行われています。「太陽系は安定しているか？」という問いなど、面白い問題が多いです。
+                今ではカオス理論や分岐現象、安定性の解析など、力学系の軌道の性質を調べる研究が広く行われています。「太陽系は安定しているか？」という問いなど、面白い問題が多いです。以下は力学系の問題などの解説動画です。<br><br>
             </div> 
+            <div class="content-youtube">
+                <ScriptYouTubePlayer video-id="xSwN9b2oQ40"/>
+            </div>
+            <div class="content-youtube">
+                <ScriptYouTubePlayer video-id="qKQt3-ABw7g"/>
+            </div>
         </div>
     </div>
 </template>
@@ -85,7 +94,7 @@
 <style lang="scss" scoped>
 	.view-container {
         width: 100%;
-        height: 70vh;
+        height: auto;
         position: relative;
         padding-top: 22px;
         padding-left: 30px;
@@ -111,6 +120,10 @@
             margin: 3%;
             .content-eq1{
                 margin: 1%;
+            }
+            .content-youtube{
+                margin: 2% auto;
+                width: 80%;
             }
         }
     }

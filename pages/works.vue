@@ -85,15 +85,15 @@
 					</li>
 					<li class="nav-item" @click="type = 3">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/intern.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
-							<div class="item-name"> Android App(Intern) </div>
+							<NuxtImg class="item-img" src="/works/procon.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
+							<div class="item-name"> CCCeB(Programing Contest) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 4">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/procon.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
-							<div class="item-name"> CCCeB(Programing Contest) </div>
+							<NuxtImg class="item-img" src="/works/intern.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
+							<div class="item-name"> Android App(Intern) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
@@ -116,8 +116,8 @@
 					<PortfolioWorksViewComponent v-if="type == 0" />
 					<MinDigerWorksViewComponent v-else-if="type == 1"/>
 					<RoboconWorksViewComponent v-else-if="type == 2"/>
-					<InternWorksViewComponent v-else-if="type == 3"/>
-					<CCCeBWorksViewComponent v-else-if="type == 4"/>
+					<CCCeBWorksViewComponent v-else-if="type == 3"/>
+					<InternWorksViewComponent v-else-if="type == 4"/>
 					<RollingSnowWorksViewComponent v-else-if="type == 5"/>
 					<OthersWorksViewComponent v-else/>
 				</div>	
@@ -134,7 +134,7 @@
 		padding-bottom: 3%;
 		display: flex;
 		justify-content: center;
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.86);
 		.nav-container {
 			width: 15%;
 			height: auto;
