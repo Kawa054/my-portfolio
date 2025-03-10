@@ -35,8 +35,8 @@
 
 			<!-- フッター -->
 			<footer>
-				<p>
-					© 2025 Ryutaro Ichikawa
+				<p class="footer">
+					© 2025 Ryutaro Ichikawa / Some Icons by <a href="https://icons8.jp//"> Icons8 </a>
 				</p>
 			</footer>
 
@@ -119,6 +119,10 @@
 			padding: 3px;
 			background-color: #000000;
 			color: #ffffff;
+			& a {
+				color: #ffffff;
+				text-decoration: underline;
+			}
 		}
 	}
 </style>

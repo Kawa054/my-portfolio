@@ -26,7 +26,7 @@
     <div class="view-container">
         <div class="title">
             <span class="main-title"> ポートフォリオサイト </span>
-            <span class="sub-title"> 　　- 制作期間 : 1週間程 -</span>
+            <span class="sub-title"> 　　- 制作期間 : 3週間程 -</span>
         </div>
         <div class="content">
             <div class="content_text1">
