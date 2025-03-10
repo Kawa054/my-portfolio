@@ -101,7 +101,7 @@
 		padding-bottom: 3%;
 		display: flex;
 		justify-content: center;
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.9);
 		.nav-container {
 			width: auto;
 			height: auto;
