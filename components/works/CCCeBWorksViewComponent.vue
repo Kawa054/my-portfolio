@@ -35,7 +35,7 @@
                 開発人数は５人ほどで、Githubを用いて共同開発を行いました。プロダクトの詳細は<a href="https://www.procon.gr.jp/wp-content/uploads//2019/10/df5dd5f98e2d4af3b822c6ad919b965e.pdf">こちら</a>の20pをご覧ください。
             </div> 
             <div class="content-img1">
-                <NuxtImg src="/works/procon/pic1.png" alt="image" quality="80" sizes="md:100% lg:600px" loading="lazy"/>
+                <NuxtImg src="/works/procon/pic1.png" alt="image" quality="80" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
             </div>
             <div class="content_text1">
                 　高専プロコンに参加した経緯としては、当時部活(電算部)内で、「学校自体の外部へのコンテスト参加が著しく少ない傾向にあるため、この流れを改善していこう」という動きがありました。

@@ -64,49 +64,49 @@
 				<ul class="nav-container">
 					<li class="nav-item" @click="type = 0">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/portfolio.png" alt="image" quality="70" sizes="md:100% lg:190px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/portfolio.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> portfolio(Website) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 1">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/mindiger.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/mindiger.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> MinDiger(Game) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 2">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/robocon.png" alt="image" quality="70" sizes="md:100% lg:200px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/robocon.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> NHK robot contest </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 3">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/procon.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/procon.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> CCCeB(Programing Contest) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 4">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/intern.png" alt="image" quality="70" sizes="md:100% lg:250px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/intern.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> Android App(Intern) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 5">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/rs.png" alt="image" quality="70" sizes="md:100% lg:210px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/rs.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> Rolling Snow(Game) </div>
 						</div>
 						<div class="nav-item-separator"></div>
 					</li>
 					<li class="nav-item" @click="type = 6">
 						<div class="item">
-							<NuxtImg class="item-img" src="/works/others.png" alt="image" quality="70" sizes="md:100% lg:210px" loading="lazy"/>
+							<NuxtImg class="item-img" src="/works/others.png" alt="image" quality="70" sizes="sm:11vw md:12vw lg:13vw" loading="lazy"/>
 							<div class="item-name"> others </div>
 						</div>
 						<div class="nav-item-separator"></div>
@@ -190,7 +190,7 @@
 			width: 70%;
 			min-height: 76vh;
 			height: auto;
-			background-color: rgba(255,255,255,0.4);
+			background-color: rgba(255,255,255, 0.8);
 			border-radius: 30px;
 		}
 		& li {

@@ -35,7 +35,7 @@
                 本当は間にテストや、検証用リポジトリを作った方がいいですが個人開発なので一旦ナシで作成。
             </div> 
             <div class="content-img">
-                <NuxtImg src="/works/portfolio_img1.png" alt="image" quality="80" sizes="md:100% lg:900px" loading="lazy"/>
+                <NuxtImg src="/works/portfolio_img1.png" alt="image" quality="80" sizes="sm:53vw md:55vw lg:57vw" loading="lazy"/>
             </div>
             <div class="content_text2">
                 　ホームページの最初には、見て楽しめるようにThree.js（実際にはVueのコンポーネントとして使用できる<a href="https://tresjs.org/">Tres.js</a>）を用いた3Dのキャンバスを実装しました。

@@ -37,7 +37,7 @@
                 また、コンテストまで一週間くらいしかないという状況でしたが、やれるとこまで作ってみようということで作成しました。
             </div>
             <div class="content-img1">
-                <NuxtImg src="/works/rs.png" alt="image" quality="80" sizes="md:100% lg:660px" loading="lazy"/>
+                <NuxtImg src="/works/rs.png" alt="image" quality="80" sizes="sm:47vw md:49vw lg:51vw" loading="lazy"/>
             </div>
             <div class="content_text1">
                 　ゲームのコンセプトとしては、雪玉を操作しより早くゴールを目指すタイムアタックのゲームとして作成しました。

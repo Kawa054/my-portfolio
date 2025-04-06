@@ -104,7 +104,6 @@
 		background-color: rgba(255, 255, 255, 0.9);
 		.nav-container {
 			width: auto;
-			height: auto;
 			display: flex;
 			flex-flow: column;
 			margin-right: 2%;
@@ -136,9 +135,9 @@
 		.content {
 			position: relative;
 			width: 70%;
-			min-height: 76vh;
 			height: auto;
-			background-color: rgba(255,255,255,0.4);
+			min-height: 76vh;
+			background-color: rgba(255,255,255, 0.8);
 			border-radius: 30px;
 		}
 		& li {

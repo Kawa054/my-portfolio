@@ -75,8 +75,8 @@
                                     　高専1年次に簡単な弾幕ゲームなどを作成していました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/danmaku1.png" alt="image" quality="80" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/danmaku2.png" alt="image" quality="80" sizes="md:100% lg:360px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/danmaku1.png" alt="image" quality="80" sizes="sm:21vw md:22vw lg:25vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/danmaku2.png" alt="image" quality="80" sizes="sm:21vw md:22vw lg:25vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　このゲームはProcessingで作成しており、Javaでのクラスの使い方の練習として作成しました。
@@ -98,9 +98,9 @@
                                     まだこの時もUIなどは意識出来ていない気がします。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/bp1.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/bp2.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/bp3.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/bp1.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/bp2.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/bp3.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　ゲーム自体はシンプルで、キャラを選んでそのキャラを出来るだけ上へ上へと飛ばすゲームです。
@@ -123,9 +123,9 @@
                                     当時好きだったゲームサイトの「クター」のミニゲームをもとに似たゲームを練習として作りました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/warashibe1.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/warashibe2.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/warashibe3.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/warashibe1.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/warashibe2.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/warashibe3.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　こちらのゲームでは上の開発経験を活かしつつ、コード内を綺麗に書いてみようと意識して作成しました。
@@ -133,9 +133,9 @@
                                     最終的にProcessingでちょっとUIを向上させたバージョンも作成しました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/warashibe4.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/warashibe5.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/warashibe6.png" alt="image" quality="90" sizes="md:100% lg:360px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/warashibe4.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/warashibe5.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/warashibe6.png" alt="image" quality="90" sizes="sm:16vw md:17vw lg:18vw" loading="lazy"/>
                                 </div>
                             </div>
                         </transition>
@@ -152,7 +152,7 @@
                                     今思えば、研究で扱っている「ベクトル場」そのものですが、自力でこの概念を思いついたのは褒めたいところです。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/vector.gif" alt="image" quality="90" sizes="md:100% lg:760px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/vector.gif" alt="image" quality="90" sizes="sm:46vw md:47vw lg:48vw" loading="lazy"/>
                                 </div>
                             </div>
                         </transition>
@@ -168,12 +168,12 @@
                                     高専3年次頃に、学校で友達と刹那の見斬りで遊びたくなり、友人から絵を貰いProcessingで1日で突発的に作りました。マウスの右と左を使って一応対戦が可能です。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/setsuna1.png" alt="image" quality="90" sizes="md:100% lg:460px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/setsuna2.png" alt="image" quality="90" sizes="md:100% lg:460px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/setsuna1.png" alt="image" quality="90" sizes="sm:26vw md:27vw lg:28vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/setsuna2.png" alt="image" quality="90" sizes="sm:26vw md:27vw lg:28vw" loading="lazy"/>
                                 </div>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/others/setsuna4.png" alt="image" quality="90" sizes="md:100% lg:460px" loading="lazy"/>
-                                    <NuxtImg src="/works/others/setsuna3.png" alt="image" quality="90" sizes="md:100% lg:460px" loading="lazy"/>
+                                    <NuxtImg src="/works/others/setsuna4.png" alt="image" quality="90" sizes="sm:26vw md:27vw lg:28vw" loading="lazy"/>
+                                    <NuxtImg src="/works/others/setsuna3.png" alt="image" quality="90" sizes="sm:26vw md:27vw lg:28vw" loading="lazy"/>
                                 </div>
                             </div>
                         </transition>
