@@ -140,6 +140,9 @@
                                 <div class="content-img1">
                                     <NuxtImg src="/works/mindiger/ground2.png" alt="image" quality="90" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
+                                <div class="content-img1">
+                                    <NuxtImg src="/works/mindiger/story.png" alt="image" quality="90" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
+                                </div>
                                 <p>
                                     　すると、上の画像のようにマップに合わせて自然な模様が生成されるようになり見た目がかなり向上しました。
                                     また、他にもオブジェクトの影をつけようとなったとき、イラスト担当の作業量が増えないように影も自動で生成されるように調整しました。
@@ -154,6 +157,9 @@
                                 </p>
                                 <div class="content-img1">
                                     <NuxtImg src="/works/mindiger/ground5.png" alt="image" quality="90" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
+                                </div>
+                                <div class="content-img1">
+                                    <NuxtImg src="/works/mindiger/ground7.png" alt="image" quality="90" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　ダンジョン自体の暗さや視界の広さなどもダンジョン内の変数として扱っており、これによって特定のダンジョンでは真っ暗にできるなどステージの幅も広がりました。
