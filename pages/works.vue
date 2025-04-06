@@ -190,7 +190,7 @@
 			width: 70%;
 			min-height: 76vh;
 			height: auto;
-			background-color: rgba(255,255,255, 0.8);
+			background-color: rgba(255,255,255, 0.82);
 			border-radius: 30px;
 		}
 		& li {
