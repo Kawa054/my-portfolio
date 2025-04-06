@@ -74,14 +74,14 @@
                                     ここではPCとWEBカメラでYOLOv5と呼ばれる物体認識モデルを用いてボールの認識を行いました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/robocon/ball1.png" alt="image" quality="100" sizes="md:100% lg:560px" loading="lazy"/>
-                                    <NuxtImg src="/works/robocon/ball2.png" alt="image" quality="80" sizes="md:100% lg:400px" loading="lazy"/>
+                                    <NuxtImg src="/works/robocon/ball1.png" alt="image" quality="100" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
+                                    <NuxtImg src="/works/robocon/ball2.png" alt="image" quality="80" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　上の画像のように、学習用の画像を準備し訓練を行わせ以下のような高精度の認識が出来ました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/robocon/detect1.png" alt="image" quality="80" sizes="md:100% lg:660px" loading="lazy"/>
+                                    <NuxtImg src="/works/robocon/detect1.png" alt="image" quality="80" sizes="sm:33vw md:35vw lg:37vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　しかしロボットに搭載する予定だったカメラはラズパイのカメラモジュールであり、認識処理自体はラズパイ上で行う必要がありYOLOだと満足するfpsが出ない課題がありました。
@@ -114,14 +114,14 @@
                                     同時に、「rviz」や「Gazebo」といったツールにも触れました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/robocon/sim1.png" alt="image" quality="80" sizes="md:100% lg:860px" loading="lazy"/>
+                                    <NuxtImg src="/works/robocon/sim1.png" alt="image" quality="80" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　画像で出ている青い扇状の部分は、四角い仮想的なロボットがカメラで認識している範囲で経路設計などで用いるためにカメラを付けています。
                                     また、rostopicなどでステアリングを操作できるようにしており、別の端末等から命令を送信することでロボットを動かせるようにしました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/robocon/sim2.png" alt="image" quality="80" sizes="md:100% lg:860px" loading="lazy"/>
+                                    <NuxtImg src="/works/robocon/sim2.png" alt="image" quality="80" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
                             </div>
                         </transition>

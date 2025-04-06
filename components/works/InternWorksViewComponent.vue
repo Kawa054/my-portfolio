@@ -36,8 +36,8 @@
                 　開発チームではリーダーを務め、要件定義、設計、開発、テスト、運用を全員で行う形で進め、各フェーズでチームの開発をまとめ、限られた期間の中でプロジェクトをどう進めるか、どういった技術を用いるかなどをチーム内で話し合い、Gitlabを用いてプロジェクトの管理なども行い完成まで指揮を取りました。
                 <br>　
             </div>
-            <NuxtImg src="/works/intern/intern5.png" alt="image" quality="90" sizes="md:100% lg:860px" loading="lazy"/>
-            <NuxtImg src="/works/intern/intern6.png" alt="image" quality="100" sizes="md:100% lg:280px" loading="lazy"/>
+            <NuxtImg src="/works/intern/intern5.png" alt="image" quality="90" sizes="sm:37vw md:39vw lg:41vw" loading="lazy"/>
+            <NuxtImg src="/works/intern/intern6.png" alt="image" quality="100" sizes="sm:9.2vw md:11.2vw lg:13.2vw" loading="lazy"/>
             <div class="content_text1">
                 <br>
                 　開発中には、全員の開発を行いたい部分や得意な技術などを聞き、モチベーションを確認しつつそれぞれ仕事を割り振りました。
@@ -53,11 +53,11 @@
                 また、チームでは技術力の面でもリーダーだったため、率先して難しい内容や詰まりそうな部分を引き受けこなすことで全体を補う形でサポートする力も重要だと学びました。
             </div>
             <div class="content-img1">
-                <NuxtImg src="/works/intern/intern0.jpg" alt="image" quality="90" sizes="md:100% lg:760px" loading="lazy"/>
-                <NuxtImg src="/works/intern/intern1.png" alt="image" quality="100" sizes="md:100% lg:960px" loading="lazy"/>
-                <NuxtImg src="/works/intern/intern2.png" alt="image" quality="100" sizes="md:100% lg:960px" loading="lazy"/>
-                <NuxtImg src="/works/intern/intern3.png" alt="image" quality="100" sizes="md:100% lg:960px" loading="lazy"/>
-                <NuxtImg src="/works/intern/intern4.png" alt="image" quality="100" sizes="md:100% lg:960px" loading="lazy"/>
+                <NuxtImg src="/works/intern/intern0.jpg" alt="image" quality="90" sizes="sm:47vw md:49vw lg:51vw" loading="lazy"/>
+                <NuxtImg src="/works/intern/intern1.png" alt="image" quality="100" sizes="sm:47vw md:49vw lg:51vw" loading="lazy"/>
+                <NuxtImg src="/works/intern/intern2.png" alt="image" quality="100" sizes="sm:47vw md:49vw lg:51vw" loading="lazy"/>
+                <NuxtImg src="/works/intern/intern3.png" alt="image" quality="100" sizes="sm:47vw md:49vw lg:51vw" loading="lazy"/>
+                <NuxtImg src="/works/intern/intern4.png" alt="image" quality="100" sizes="sm:47vw md:49vw lg:51vw" loading="lazy"/>
             </div>
         </div>
     </div>

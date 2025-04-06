@@ -145,7 +145,7 @@
 			width: 70%;
 			min-height: 76vh;
 			height: auto;
-			background-color: rgba(255,255,255,0.4);
+			background-color: rgba(255,255,255, 0.8);
 			border-radius: 30px;
 		}
 		& li {

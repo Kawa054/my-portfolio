@@ -62,8 +62,8 @@
                 開発ではプログラム、ゲーム案の立案、開発進行の全般を担当しリーダーを担いました。最終的にメンバーの予定など様々な理由でコンテストまでには作れませんでしたが、良い開発経験とリーダー経験になりました。
             </div> 
             <div class="content-img1">
-                <NuxtImg src="/works/mindiger.png" alt="image" quality="90" sizes="md:100% lg:490px" loading="lazy"/>
-                <NuxtImg src="/works/mindiger/under1.png" alt="image" quality="90" sizes="md:100% lg:490px" loading="lazy"/>
+                <NuxtImg src="/works/mindiger.png" alt="image" quality="90" sizes="sm:26vw md:28vw lg:30vw" loading="lazy"/>
+                <NuxtImg src="/works/mindiger/under1.png" alt="image" quality="90" sizes="sm:26vw md:28vw lg:30vw" loading="lazy"/>
             </div>
             <!-- 開閉式のアコーディオン -->
             <div class="accordion">
@@ -79,17 +79,17 @@
                                     　ゲームの開発初期では、自分が元々作成したかった2Dのローグライクなゲームを作成しようという提案をしました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/start1.png" alt="image" quality="80" sizes="md:100% lg:460px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/start2.png" alt="image" quality="80" sizes="md:100% lg:400px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/start1.png" alt="image" quality="80" sizes="sm:26vw md:28vw lg:30vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/start2.png" alt="image" quality="80" sizes="sm:26vw md:28vw lg:30vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　自分が遊んできて楽しいと感じた似ているゲーム(ポケモンダンジョン、マインクラフト、勇者のくせに生意気だ等)を自分の視点で分析し、初めの一か月程チームメンバーと話し合いゲーム内容を固めていきました。
                                     グラフィックは個人的に好きだったCartoというゲームを参考にしました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/start3.png" alt="image" quality="100" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/start4.png" alt="image" quality="100" sizes="md:100% lg:360px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/start5.png" alt="image" quality="100" sizes="md:100% lg:360px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/start3.png" alt="image" quality="100" sizes="sm:16vw md:18vw lg:20vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/start4.png" alt="image" quality="100" sizes="sm:16vw md:18vw lg:20vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/start5.png" alt="image" quality="100" sizes="sm:16vw md:18vw lg:20vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　上の画像は初期に考えていた案で、「冒険」をテーマに、プレイヤーが「○○してみたらどうなるんだろう？」という好奇心をくすぐるようなゲームを考えました。
@@ -99,20 +99,20 @@
                                     何度か調整を重ね、かなり良いUIになったと感じています。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/UI1.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/UI2.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI1.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI2.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
                                 </div>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/UI3.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/UI4.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI3.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI4.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
                                 </div>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/UI7.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/UI8.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI7.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI8.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
                                 </div>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/UI5.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/UI6.png" alt="image" quality="90" sizes="md:100% lg:500px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI5.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/UI6.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
                                 </div>
                             </div>
                         </transition>
@@ -129,7 +129,7 @@
                                     すると、以下の画像のデモのように上手く地面の模様を作れないという問題に当たりました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/ground1.png" alt="image" quality="90" sizes="md:100% lg:590px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/ground1.png" alt="image" quality="90" sizes="sm:33vw md:35vw lg:37vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　また、マップタイルであると常に規則的な地面の模様になり、自然な模様には見えないという問題もあり相談がありました。
@@ -138,7 +138,7 @@
                                     具体的には、0~255の数値を二次元上にパーリンノイズで生成し、ある区間では特定の色に置き換えるというプログラムをシェーダーを用いて実装しました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/ground2.png" alt="image" quality="90" sizes="md:100% lg:890px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/ground2.png" alt="image" quality="90" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　すると、上の画像のようにマップに合わせて自然な模様が生成されるようになり見た目がかなり向上しました。
@@ -146,21 +146,21 @@
                                     他にも、ゲーム内のダンジョンの床の模様も同様のプログラムで生成できるようにし、以下の画像のように単調性をなくすことに成功しました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/ground3.png" alt="image" quality="90" sizes="md:100% lg:490px" loading="lazy"/>
-                                    <NuxtImg src="/works/mindiger/ground4.png" alt="image" quality="90" sizes="md:100% lg:490px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/ground3.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/ground4.png" alt="image" quality="90" sizes="sm:23vw md:25vw lg:27vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　最初期ののっぺりとしたゲームからかなり改善したと思います。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/ground5.png" alt="image" quality="90" sizes="md:100% lg:790px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/ground5.png" alt="image" quality="90" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
                                 <p>
                                     　ダンジョン自体の暗さや視界の広さなどもダンジョン内の変数として扱っており、これによって特定のダンジョンでは真っ暗にできるなどステージの幅も広がりました。
                                     他にも、松明による光をシェーダー等で上手く実装することで本格的にゲームらしいグラフィックに近づけることが出来ました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg src="/works/mindiger/ground6.png" alt="image" quality="100" sizes="md:100% lg:790px" loading="lazy"/>
+                                    <NuxtImg src="/works/mindiger/ground6.png" alt="image" quality="100" sizes="sm:43vw md:45vw lg:47vw" loading="lazy"/>
                                 </div>
                             </div>
                         </transition>
@@ -176,7 +176,7 @@
                                     そこで、ロード画面を追加しロードが終わるまで読み込み画面を流すようにしました。
                                 </p>
                                 <div class="content-img1">
-                                    <NuxtImg preload src="/works/mindiger/loadgif.gif" alt="image" quality="80" sizes="md:100% lg:590px" />
+                                    <NuxtImg preload src="/works/mindiger/loadgif.gif" alt="image" quality="80" sizes="sm:43vw md:45vw lg:47vw" />
                                 </div>
                                 <p>
                                     　街へ忘れ物をした際などに、再度戻りロードするとユーザの体験が損なわれるため、最終的には遷移一回分の情報をメモリに保持しロードしないようにしました。(上の動画ではローディングしているが、実際には隣接する移動であればローディングしない)

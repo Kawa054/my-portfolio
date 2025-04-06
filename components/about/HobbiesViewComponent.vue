@@ -54,7 +54,6 @@
 <style lang="scss" scoped>
 	.view-container {
         width: 100%;
-		height: auto;
         position: relative;
 		display: flex;
         justify-content:space-evenly;
@@ -75,7 +74,7 @@
 				width: 94%;
 				margin-right: 4%;
 				margin-left: 6%;
-				height: 60vh;
+				height: auto;
 			}
 		}
 		.content1 {
