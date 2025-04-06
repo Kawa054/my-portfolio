@@ -54,7 +54,8 @@
     }>()
 
     const scroll = () => {
-        window.scrollTo({top: 800, left: 0, behavior: "smooth"}); 
+        let zoom_value=(window.outerWidth - 16) / window.innerWidth;
+        window.scrollTo({top: window.innerHeight - 90 * zoom_value, left: 0, behavior: "smooth"}); 
     }
 
     const handleScroll = () => {
