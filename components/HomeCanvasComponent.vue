@@ -57,7 +57,7 @@
 	});
 </script>
 
-<template>
+<!-- <template>
   <TresCanvas v-bind="gl" class="canvas-container">
     <TresPerspectiveCamera :position="[8, 2, 13]" />
 	<OrbitControls/>
@@ -92,6 +92,42 @@
 		<Text3D
 			:position="[0, 1, 0]"
 			text="ドラッグ: カメラ角度変更"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+    <TresDirectionalLight :position="[0, 10, 4]" :intensity="1.2" cast-shadow />
+    <TresGridHelper />
+  </TresCanvas>
+</template> -->
+
+<template>
+  <TresCanvas v-bind="gl" class="canvas-container">
+    <TresPerspectiveCamera :position="[8, 2, 13]" />
+	<OrbitControls/>
+    <Suspense>
+		<Text3D
+			:position="[0, 4, 0]"
+			text="現在サイトを大規模改修中です。"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+	<Suspense>
+		<Text3D
+			:position="[0, 3, 0]"
+			text="2026/4月に再度公開予定"
+			font="/fonts/DotGothic16_Regular.json" 
+		>
+			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />
+		</Text3D>
+    </Suspense>
+	<Suspense>
+		<Text3D
+			:position="[0, 1, 0]"
+			text="お手数おかけしますがお待ちください。"
 			font="/fonts/DotGothic16_Regular.json" 
 		>
 			<TresShaderMaterial ref="blobRef" :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" />

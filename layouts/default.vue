@@ -29,9 +29,9 @@
 			<HeaderComponent @change-header-hover="recieve_hover_id"/>
 
 			<!-- ページ下部 -->
-			<div class="main">
+			<!-- <div class="main">
 				<slot></slot>
-			</div>
+			</div> -->
 
 			<!-- フッター -->
 			<footer>
